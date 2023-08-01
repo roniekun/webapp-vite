@@ -1,0 +1,52 @@
+.contact__content__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'one one'
+                        'two two'
+                        'three four';
+
+    place-items: center;
+    height:auto;
+    width:90vw;
+    padding: 10% 5% 10% 5%;
+  
+    
+ 
+}
+.contact{
+    grid-area: one;
+    color:#181818;
+    height: fit-content;
+ 
+ 
+}
+.form{
+
+    grid-area: three;
+
+}
+.email{
+    grid-area: two;
+    font-family: 'Lato';
+    font-size:45px;
+    grid-area: two;
+
+
+}
+@media (max-width: 600px) {
+ .contact__content__container{
+    
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding: 5%;
+
+ }
+
+.email{
+
+    font-size: 18px;
+}
+
+
+}

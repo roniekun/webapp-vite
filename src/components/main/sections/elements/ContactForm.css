@@ -1,0 +1,171 @@
+.form__container{
+    display: flex;
+    /* background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%); */
+    height:100%;
+    width: 100%;
+    border-radius:0px;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10%;
+    background-color: white;
+    
+
+}
+.form__heading{
+
+    margin: 5% 0 10% 0;
+    font-size: 35px;
+
+    color: #0a1f44;
+    font-family: 'Futura PT';
+   
+}
+.first__layer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+}
+.form{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    color:#C6CDD2;
+
+    
+
+}
+.text__input, .text__area, .email__input{
+    border: 1px solid transparent;
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    border-radius: 4px;
+    color:#606266;
+    background-color: #F3F3f4;
+    font-size: 12px;
+    font-family: 'Manrope', sans-serif;
+}
+.text__input:focus, .text__area:focus, .email__input:focus{
+    background-color: #ffffff;
+   
+
+}
+.text__input:hover, .text__area:hover, .email__input:hover{
+
+    border: solid 1px #DCDFE6;
+}
+.email__input{
+
+    padding: 3px;
+    width:500px;
+    height: 40px;
+    
+   
+    
+
+}
+
+
+
+.text__input{
+
+    width:240px;
+    height: 40px;
+    padding: 3px;
+}
+.text__area{
+    padding: 3px;
+    width:500px;
+    height: 80px;
+
+    resize: none;
+    overflow-y: scroll;
+}
+.submit__button{
+    
+    margin-top:20px;
+    border: 1px solid rgba(11,15,25,.1);
+    color:#f5f5f5;
+    border-radius: 4px;
+    height: 50px;
+    width: 80%;
+    padding:5px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all .3s;
+    cursor: pointer;
+    letter-spacing: 1px;
+    line-height: 1;
+    background-color: #181818;
+    font-family: 'Futura PT';
+
+
+}
+.loading{
+
+    cursor: wait;
+}
+.submit__button:hover{
+    background-color: black;
+    color: white;
+    box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.3), /* Shadow at the top */
+    0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow at the bottom */
+}
+
+.error__firstname{
+    border-color: red;
+
+}
+@media (max-width: 600px) {
+    .form__container{
+        border-radius: 2px;
+        width: 100%;
+        padding:5%;
+        margin:0;
+    }
+
+    .form{
+
+        width: 100%;
+
+    
+    }
+
+    .form__heading{
+        font-size: 35px;
+        margin-top: 20px;
+
+    }
+    .first__layer{
+        flex-direction: column;
+        width: 100%;
+        padding: 2%;
+
+    }
+
+    .second__layer{
+        width: 100%;
+        padding: 2%;
+     
+    }
+    .text__input, .text__area, .email__input{
+        width: 100%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+
+    }
+
+    
+    .submit__button{
+        width: 90%;
+        margin-bottom:10%;
+     
+       
+    }
+
+}

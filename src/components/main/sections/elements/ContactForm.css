@@ -9,7 +9,6 @@
     align-items: center;
     flex-direction: column;
     padding: 10%;
-    background-color: white;
     
 
 }
@@ -43,9 +42,9 @@
     width: 100%;
     margin-top: 2%;
     margin-bottom: 4%;
-    border-radius: 4px;
     color:#606266;
-    background-color: #F3F3f4;
+    border: solid 1px #A9A9A9;
+    background-color: #FAFAFA;
     font-size: 12px;
     font-family: 'Manrope', sans-serif;
 }
@@ -62,7 +61,7 @@
 
     padding: 3px;
     width:500px;
-    height: 40px;
+    height: 46px;
     
    
     
@@ -74,13 +73,13 @@
 .text__input{
 
     width:240px;
-    height: 40px;
+    height: 46px;
     padding: 3px;
 }
 .text__area{
     padding: 3px;
     width:500px;
-    height: 80px;
+    height: 100px;
 
     resize: none;
     overflow-y: scroll;
@@ -130,7 +129,7 @@
     }
 
     .form{
-
+       
         width: 100%;
 
     
@@ -144,7 +143,8 @@
     .first__layer{
         flex-direction: column;
         width: 100%;
-        padding: 2%;
+        padding: 2% 2% 0 2% ;
+
 
     }
 

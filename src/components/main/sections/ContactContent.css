@@ -47,6 +47,11 @@
 
     font-size: 18px;
 }
+.form{
+
+    width: 100vw;
+    padding-inline: 2%;
+}
 
 
 }

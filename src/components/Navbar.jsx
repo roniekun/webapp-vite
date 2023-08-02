@@ -1,4 +1,4 @@
-import { Link, useLocation } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import './Navbar.css';
 import { ThemeContext } from '../context/ThemeContext';
 import SocialLinks from './icons/SocialLinks';
@@ -42,14 +42,14 @@ const Navbar = ({ showNavbar, isDesktop, isSmallScreen, setShowNavbar }) => {
                   className="link_wrapper"
                   key={link.to}
                 >
-                  <Link
+                  <NavLink
                     onClick={() => handleLinkClick(location.pathname === link.to)}
                     className={`navbar_link ${location.pathname === link.to ? 'active' : ''}`}
                     to={link.to}
                   >
                     {/* {isSmallScreen && isActive && location.pathname === link.to && <ActiveIcon />} */}
                     {link.text}
-                  </Link>
+                  </NavLink>
                 </div>
               ))}
             </div></>

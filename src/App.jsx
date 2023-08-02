@@ -9,6 +9,7 @@ import About from './components/main/About';
 import Portfolio from './components/main/Portfolio';
 import Blog from './components/main/Blog';
 import NotFound from './components/main/NotFound';
+import Policy from './components/main/Policy';
 import Menu from './components/icons/Menu';
 import './App.css';
 import { ThemeProvider, ThemeContext } from './context/ThemeContext';
@@ -98,6 +99,7 @@ const App = () => {
                   <Route path='/portfolio' element={<Portfolio isSmallScreen={isSmallScreen}  showNavbar={showNavbar} />} />
                   <Route path='/blog' element={<Blog isSmallScreen={isSmallScreen}  showNavbar={showNavbar} />} />
                   <Route path='/contact' element={<Contact isSmallScreen={isSmallScreen}  showNavbar={showNavbar} />} />
+                  <Route path='/policy' element={<Policy isSmallScreen={isSmallScreen}  showNavbar={showNavbar} />} />
                   <Route component={NotFound} />
                 </Routes>
                 {/* <AutoscrollButton

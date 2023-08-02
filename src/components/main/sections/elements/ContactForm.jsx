@@ -3,6 +3,7 @@ import './ContactForm.css';
 import ContactModal from './ContactModal';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
+import { NavLink, useLocation} from 'react-router-dom';
 
 const firebaseConfig = {
   apiKey: "AIzaSyDCbfEVWBnQQ0LtWmWQdomUifl8QOncSDM",
@@ -32,6 +33,10 @@ const ContactForm = () => {
   const [modalMessage, setModalMessage] = useState('');
   const [isSuccess, setIsSuccess] = useState(true);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isChecked, setIsChecked] = useState(false);
+  const location = useLocation();
+  const handleCheckboxChange = (event) => {
+    setIsChecked(event.target.checked);}
 
   const handleChange = e => {
 
@@ -49,7 +54,8 @@ const ContactForm = () => {
 
     
 
-    if (formData.firstname && formData.lastname && formData.email && formData.message) {
+    if (formData.firstname && formData.lastname && formData.email && formData.message && isChecked) {
+      
       formData.name = formData.firstname + ' ' + formData.lastname;
       setIsSubmitting(true);
 
@@ -163,6 +169,25 @@ const ContactForm = () => {
             required
           />
         </div>
+        <div style={{display: 'flex',
+                   justifyContent: 'center',
+                    alignItems: 'center'
+      }}>
+        <input type="checkbox" id="privacyAgreement" name="privacyAgreement" required  onChange={handleCheckboxChange}/> 
+      <label for="privacyAgreement" style={{marginLeft:'5px', color:'#181818', fontSize: '12px'}}>
+       
+          By submitting the form, you agreed to the
+         </label>
+        
+         <NavLink to="/policy"
+             onClick={(e) => {
+            if (location.pathname === '/policy') {
+             e.preventDefault();     
+              }
+            }}  
+            style={{fontSize:'12px', color: '#0A1F44', paddingInline:'3px'}}>
+            Privacy Policy.</NavLink>
+      </div>
         <button className={`submit__button ${isSubmitting ? 'loading' : ''}`} 
                   type="submit">
           {isSubmitting? 'please wait' : 'Submit' }</button>

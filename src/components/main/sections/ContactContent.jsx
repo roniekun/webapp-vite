@@ -19,10 +19,9 @@ const ContactContent = () => {
          <h2 className='contact'> CONTACT</h2> <br/>
          <a onClick={handleClick} className='email' href="#" style={{textDecoration:'none', color: '##FFB600', fontWeight:'700'}}>  
         roniebenitez01@gmail.com</a>
-        <div className='form' style={{width:'100%', padding: '5%'}}>        
+        <div className='form'>        
           <ContactForm/>
         </div>
-
 
     </div>
   )

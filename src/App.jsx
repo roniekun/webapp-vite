@@ -7,7 +7,7 @@ import Home from './components/main/Home';
 import Contact from './components/main/Contact';
 import About from './components/main/About';
 import Portfolio from './components/main/Portfolio';
-import Blog from './components/main/Blog';
+// import Blog from './components/main/Blog';
 import NotFound from './components/main/NotFound';
 import Policy from './components/main/Policy';
 import Menu from './components/icons/Menu';
@@ -33,7 +33,7 @@ const App = () => {
 
   const handleScroll = useCallback(() => {
     const currentScroll = window.scrollY;
-    setShowNavbar( currentScroll === 0); 
+    setShowNavbar( !isSmallScreen && currentScroll === 0); 
     // scrollPosition > currentScroll ||
     // setShowNavbar(true); shows Navigation bar
     setScrollPosition(currentScroll);
@@ -97,7 +97,7 @@ const App = () => {
                   <Route path='/' element={<Home isSmallScreen={isSmallScreen} showNavbar={showNavbar} />} />
                   <Route path='/about' element={<About isSmallScreen={isSmallScreen} showNavbar={showNavbar} />} />
                   <Route path='/portfolio' element={<Portfolio isSmallScreen={isSmallScreen}  showNavbar={showNavbar} />} />
-                  <Route path='/blog' element={<Blog isSmallScreen={isSmallScreen}  showNavbar={showNavbar} />} />
+                  {/* <Route path='/blog' element={<Blog isSmallScreen={isSmallScreen}  showNavbar={showNavbar} />} /> */}
                   <Route path='/contact' element={<Contact isSmallScreen={isSmallScreen}  showNavbar={showNavbar} />} />
                   <Route path='/policy' element={<Policy isSmallScreen={isSmallScreen}  showNavbar={showNavbar} />} />
                   <Route component={NotFound} />

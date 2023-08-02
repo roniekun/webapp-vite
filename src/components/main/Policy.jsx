@@ -8,7 +8,7 @@ const Policy = ({isSmallScreen}) => {
   <div className="policy">
 
 
-<h4>Effective Date: August 2023</h4><br />
+<h4 className='lists'>Effective Date: August 2023</h4><br />
 
 <h3 className='lists'>1. Introduction</h3>
 <br/>
@@ -99,7 +99,7 @@ You can exercise this right by clicking on the "unsubscribe" or "opt-out" link i
    <br />
    <br />
 
-<h3>
+<h3 className='lists'>
 Ronie Benitez <br />
 Tantangan <br />
 South Cotabato, Philippines, 9510 <br />

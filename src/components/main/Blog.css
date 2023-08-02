@@ -19,6 +19,7 @@
     align-items: center;
     width: 100vw;
     font-family: 'Futura PT';
+    padding: 10%;
 
     
   
@@ -26,10 +27,13 @@
 @media(max-width: 600px){
     
     .blog_container{
-
-        padding-top: 50px;
+        padding-top:50px;
+     
     }
-
+    .no_content{
+         
+        padding: 5%;
+    }
 }
     
   

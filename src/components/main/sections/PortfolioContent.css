@@ -5,6 +5,7 @@
         padding: 5%;
         width: 100%;
         font-size: 18px;
+        word-spacing: 2px;
 }
 
 .portfolio__first__section{
@@ -124,7 +125,7 @@
 .portfolio_ptag{
         font-size: 18px;
         line-height: 28px;
-        font-weight: 400;
+        font-weight: 300;
         text-align: left;
         font-family: 'Manrope';
 
@@ -181,7 +182,7 @@
     .portfolio_ptag{
 
         font-size: 16px;
-        font-weight: 400;
+        font-weight: 300;
     }
     .format_text{
 

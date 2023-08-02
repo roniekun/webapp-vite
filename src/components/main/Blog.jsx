@@ -9,7 +9,7 @@ const Blog = ({isSmallScreen
     <div  className='blog_container'>
 
         <div className='no_content'>
-        <h1> No content!</h1>
+        <h1> No content! :) </h1>
         </div>
   
 

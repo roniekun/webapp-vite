@@ -149,7 +149,6 @@
    
     color:#0183BE;
     text-decoration: none;
-    transform: scale(0.975);
   
 
 
@@ -180,7 +179,7 @@
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
       overflow-y: hidden;
       z-index: 9999;
-      padding-bottom:60px;
+      padding-block:20%;
       /* transition: transform 0.5s cubic-bezier(.29,.3,0,.95); */
       position: fixed;
       inset: 0;
@@ -220,7 +219,7 @@
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
       overflow-y: hidden;
       z-index: 9999;
-      padding-bottom:60px;
+      padding-block:20%;
       position: fixed;
       inset: 0;
       border: 1px solid rgba(11,15,25,.1);
@@ -233,9 +232,13 @@
       position: relative;
       display: flex;
       flex-direction: column;
-      width: 80%;
-      margin-right: 0;
-      margin-top: 15%;
+      width: 90%;
+      height: 70%;
+
+      padding-block:10%;
+      
+      
+      
   
 
     }
@@ -256,12 +259,15 @@
     bottom: 0;
     height: 1px;
     width: 100%;
+    transform: translateY(-100%);
+   
     }
   
     .link_wrapper {
       position: relative;
       height: fit-content;
       width: 100%;
+      margin:0;
   
     }
   .navbar__hidden .navbar_link{
@@ -272,7 +278,6 @@
       font-family: 'Futura PT', sans-serif; 
       display: flex;
       color: black;
-      line-height: 32px;  
       font-size: 28px;
       text-transform: uppercase;
       opacity: 1;
@@ -280,21 +285,20 @@
       justify-content: center;
       text-decoration: none;
       margin: 10px;
-      padding: 2px;
       width: 100%;
-      height: 65px;
-      font-weight: 700;
+      font-weight: 400;
 
     }
-    .navbar_link:hover {
-      opacity: 1;
-     transform: scale(1.025);
-     font-weight: bold;
-     border-radius: 2px;
+    .link_wrapper:hover  .navbar_link{
+
+      color:black;
+      scale: 0.925;
     }
     
-    .navbar_link.active {
-     color: #FFB600;
+    .navbar_link.active{
+      background-color: #687076;
+      color: black;
+     font-weight: 400;
       opacity: 1;
       transform: scale(1.025);
   
@@ -302,11 +306,7 @@
       
     
     }
-    .navbar_link:hover.active {
-
-      color: black;
-
-    }
+   
   
 
   }

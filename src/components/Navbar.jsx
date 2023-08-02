@@ -13,7 +13,7 @@ const Navbar = ({ showNavbar, isDesktop, isSmallScreen, setShowNavbar }) => {
     { to: '/', text: 'home' },
     { to: '/about', text: 'about' },
     { to: '/portfolio', text: 'work' },
-    { to: '/blog', text: 'blog' },
+    // { to: '/blog', text: 'blog' },
     { to: '/contact', text: 'contact' },
     
   ];

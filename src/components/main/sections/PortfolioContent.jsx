@@ -25,13 +25,12 @@ const PortfolioContent = () => {
         <div className='grid_item'>Component-Based</div>
         <div className='grid_item'>Interactive</div>
         <div className='grid_item'>Fast Rendering</div>
-      
    
       </div>
 
     <div className='card_container'>
-        <p  className='portfolio_ptag color'> Specialize in creating stunning website landing pages and portfolios 
-                that showcase your unique brand and captivate your audience. <br/>
+        <p className='format_text'> Specialize in creating stunning website landing pages and portfolios 
+                that showcase your unique brand and captivate your audience.
                 With my expertise in web design and content creation, I help businesses
                 and individuals establish a strong online presence that leaves a lasting impression.</p>
 
@@ -51,7 +50,7 @@ const PortfolioContent = () => {
 
 
       
-      <div className='services__container'>
+      <div className='services_container'>
 
       <h2 className='ptag_portfolio_title'>Website Landing Pages</h2>
       <p className='portfolio_ptag'>Crafts visually appealing and user-friendly landing pages that effectively communicate your message and drive conversions.
@@ -60,7 +59,7 @@ const PortfolioContent = () => {
       </div>
 
 
-      <div className='services__container'>
+      <div className='services_container'>
       <h2 className='ptag_portfolio_title'>Portfolio Creation</h2>
       <p className='portfolio_ptag'> Stand out from the competition with a professionally designed portfolio that showcases your skills, projects, and accomplishments.
         Tailor each portfolio to reflect your personal brand or company image, ensuring it leaves a memorable impact on potential clients and employers.

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Menu.css';
-import { Turn as Hamburger } from 'hamburger-react';
+import { Twirl as Hamburger } from 'hamburger-react';
 import { ThemeContext } from '../../context/ThemeContext';
 import StringCharacterMapper from  '../main/animation/StringCharacterMapper';
 
@@ -14,14 +14,18 @@ const Menu = ({ position, showNavbar, isSmallScreen, setShowNavbar }) => {
   return (
     <ThemeContext.Consumer>
       {theme => (
-        <div style={{position:position}} className='menu__container'>
+        <div style={{position:position}} className='menu_container'>
           {isSmallScreen ? (
             <div
               id={`component-${theme}`}
+              style={{ background: showNavbar? 'black': '', transition: '.3s' }}
               className='menu__btn'
               onClick={handleClick}
             >
-              <Hamburger toggled={showNavbar} toggle={setShowNavbar} size={20} />
+              <Hamburger toggled={showNavbar} toggle={setShowNavbar} 
+              color= {showNavbar? 'white': 'black' } 
+              hideOutline={false}
+               distance='sm' duration={0.3} size={25} />
             </div>
           ) : (
             <div className='menu__text__container'>

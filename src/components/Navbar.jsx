@@ -36,15 +36,15 @@ const Navbar = ({ showNavbar, isDesktop, isSmallScreen, setShowNavbar }) => {
             
             <>
             {/* <SiteLogo Left={'0'}/> */}
-            <div className="links__container">
+            <div className="links_container">
               {links.map((link) => (
                 <div
-                  className="link__wrapper"
+                  className="link_wrapper"
                   key={link.to}
                 >
                   <Link
                     onClick={() => handleLinkClick(location.pathname === link.to)}
-                    className={`navbar__link ${location.pathname === link.to ? 'active' : ''}`}
+                    className={`navbar_link ${location.pathname === link.to ? 'active' : ''}`}
                     to={link.to}
                   >
                     {/* {isSmallScreen && isActive && location.pathname === link.to && <ActiveIcon />} */}
@@ -55,7 +55,7 @@ const Navbar = ({ showNavbar, isDesktop, isSmallScreen, setShowNavbar }) => {
             </div></>
             <>
             {isSmallScreen &&
-            <SocialLinks showNavbar={showNavbar} fillColor={'white'}  />}
+            <SocialLinks showNavbar={showNavbar} fillColor={'black'}  />}
             
            {/* {isSmallScreen &&   <ToggleTheme isSmallScreen={isSmallScreen} showNavbar={showNavbar} fontColor="white" position="relative" />} */}
             </>

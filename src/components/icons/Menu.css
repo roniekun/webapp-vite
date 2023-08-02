@@ -1,17 +1,16 @@
-.menu__container{
+.menu_container{
     z-index: 99999;
     top:0;
     right:0;
     height: 75px;
-    width: 10vw;
+    width: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
-    
+   
 }
 .menu__btn{
-    color: #585858;
+    color: #181818;
     letter-spacing: 2px;
 
 }
@@ -50,13 +49,17 @@
 }
 @media (max-width: 600px) {
 
-    .menu__container{
+    .menu_container{
         box-sizing: border-box;
         z-index: 99999;
         position: relative;
         align-self: flex-end;
         height: fit-content;
-        margin-right: 15px ;
+        transform: translate(-30%, 10%);
+
+  
+
+       
     
 
         

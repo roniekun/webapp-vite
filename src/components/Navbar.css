@@ -159,13 +159,13 @@
   
     .navbar_container {
       /* animation: show 0.5s cubic-bezier(.29,.3,0,.95) forwards; */
-      transform: 0.5s cubic-bezier(.29,.3,0,.95);
+      transform: 0.3s ease-in;
       display: flex;
       flex-direction: column;
       overflow-x: hidden;
       justify-content: space-between;
       height: 100vh;
-      width: 83vw;
+      width: 100vw;
       /* background-color: #0E2E47; */
       background-color: #3d3d3d;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -175,11 +175,11 @@
       /* transition: transform 0.5s cubic-bezier(.29,.3,0,.95); */
       position: fixed;
       inset: 0;
-      transform: translateY(0);
-      transform: translateX(0);
       border: 1px solid rgba(11,15,25,.1);
       transition-delay: .2s;
+      transform: scale(1);
       overflow: hidden;
+      opacity: 1;
    
     }
 
@@ -195,16 +195,17 @@
     }
      */
     .navbar_hidden {
-
-      /* animation: hide 0.5s cubic-bezier(.29,.3,0,.95) ; */
-      transform: translateX(-100%);
-      transition: 0.5s cubic-bezier(.29,.3,0,.95) ;
       display: flex;
+      visibility: hidden;
+      opacity: 0;
+      /* animation: hide 0.5s cubic-bezier(.29,.3,0,.95) ; */
+      transform: scale(1.5);
+      transition: 0.3s ease-in ;
       flex-direction: column;
       overflow-x: hidden;
       justify-content: space-between;
       height: 100vh;
-      width: 80vw;
+      width: 100vw;
       /* background-color: #0E2E47; */
       background-color: #3d3d3d;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);

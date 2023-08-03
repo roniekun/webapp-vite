@@ -18,12 +18,12 @@ const Menu = ({ position, showNavbar, isSmallScreen, setShowNavbar }) => {
           {isSmallScreen ? (
             <div
               id={`component-${theme}`}
-              style={{ background: showNavbar? 'black': '', transition: '.3s' }}
+              style={{transition: '.3s', borderRadius: '50%', opacity: '0.8' }}
               className='menu__btn'
               onClick={handleClick}
             >
               <Hamburger toggled={showNavbar} toggle={setShowNavbar} 
-              color= {showNavbar? 'white': 'black' } 
+              color= {showNavbar? 'black': 'black' } 
               hideOutline={false}
                distance='sm' duration={0.3} size={25} />
             </div>

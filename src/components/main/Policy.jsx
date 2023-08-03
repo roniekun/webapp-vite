@@ -13,7 +13,7 @@ const Policy = ({isSmallScreen}) => {
 <h3 className='lists'>1. Introduction</h3>
 <br/>
  <p className='ptag_policy'>
- Welcome to my website. 
+ Welcome!  <br />
 We are committed to protecting your personal information and your right to privacy. 
 If you have any questions or concerns about our policy or our practices with regards to your personal information, 
 please contact us. <br />
@@ -100,7 +100,7 @@ You can exercise this right by clicking on the "unsubscribe" or "opt-out" link i
    <br />
 
 <h3 className='lists'>
-Ronie Benitez <br />
+Ronie-dev <br />
 Tantangan <br />
 South Cotabato, Philippines, 9510 <br />
 roniebenitez01@gmail.com  <br />

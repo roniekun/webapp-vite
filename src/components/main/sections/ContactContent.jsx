@@ -17,8 +17,11 @@ const ContactContent = () => {
   return (
     <div className='contact__content__container'>
          <h2 className='contact'> CONTACT</h2> <br/>
-         <a onClick={handleClick} className='email' href="#" style={{textDecoration:'none', color: '##FFB600', fontWeight:'700'}}>  
-        roniebenitez01@gmail.com</a>
+         <h2 onClick={handleClick} className='email' 
+         style={{textDecoration:'none', 
+                fontWeight:'700', 
+                cursor: 'pointer'}}>  
+        roniebenitez01@gmail.com</h2>
         <div className='form'>        
           <ContactForm/>
         </div>

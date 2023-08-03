@@ -33,7 +33,8 @@ const App = () => {
 
   const handleScroll = useCallback(() => {
     const currentScroll = window.scrollY;
-    setShowNavbar( !isSmallScreen && currentScroll === 0); 
+    if (isDesktop){
+    setShowNavbar( currentScroll === 0); }
     // scrollPosition > currentScroll ||
     // setShowNavbar(true); shows Navigation bar
     setScrollPosition(currentScroll);

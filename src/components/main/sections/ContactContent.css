@@ -31,8 +31,14 @@
     font-family: 'Lato';
     font-size:45px;
     grid-area: two;
+    color: #FFB600;
 
 
+}
+.email:hover{
+  
+    color: #181818;
+    opacity: .9;
 }
 @media (max-width: 600px) {
  .contact__content__container{

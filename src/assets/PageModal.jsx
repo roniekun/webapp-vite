@@ -27,10 +27,9 @@ const PageModal = ({ showNavbar }) => {
         width: '100vh',
         height: '100vh',
         position:'fixed',
-        zIndex: '9999',
-        transition: 'all 1s ease',
-        backgroundColor: 'rgba(0, 0, 0, 0.2)',
-        backdropFilter: 'blur(15px)',
+        zIndex: '7777',
+        backgroundColor: 'rgba(58, 57, 57, 0.7)',
+      
       }}
     ></div>
   ) : null;

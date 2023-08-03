@@ -1,11 +1,11 @@
 .format_text{
 
-        margin: 5%;
-        text-align: center;
         padding: 5%;
-        width: 100%;
+        text-align: center;
+        width: 95%;
         font-size: 18px;
         word-spacing: 2px;
+        
 }
 
 .portfolio__first__section{
@@ -25,12 +25,13 @@
 }
 
 .hero__text__container{
-        font-family:  'Manrope';
+
         display: flex;
         justify-content: space-around;
         align-items: center;
         position: relative;
         width: 80%;
+        font-family: 'Clash Display';
         text-align: center;
         height: 600px;
       
@@ -80,6 +81,7 @@
         justify-content: space-evenly;
         flex-direction: column;
         width: fit-content;
+    
         /* background-color: red; */
  }
  .cards{
@@ -116,9 +118,9 @@
         display: flex;
         text-align: left;
         font-size: 34px;
-        font-weight: 400;
+        font-weight: 500;
         line-height:34px;
-        font-family: 'Futura PT';
+        font-family: 'Clash Display';
         padding-block: 5%;
  
 }
@@ -127,7 +129,7 @@
         line-height: 28px;
         font-weight: 300;
         text-align: left;
-        font-family: 'Manrope';
+        
 
 }
 

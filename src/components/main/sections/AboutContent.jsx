@@ -19,6 +19,10 @@ const AboutContent = () => {
         {/* <div className= {isClicked ? 'about__text__container__clicked' : 'about__text__container' }> */}
 
         <div className='about__text__container'>
+                        <h1> About Me</h1>
+                        <br />
+                        <br />
+                       
                        <p > A self-taught web developer with passion for creating stunning and functional websites. 
                         I enjoy crafting captivating webpage, strive to create visually appealing and intuitive interfaces that engage users and convey the essence of a brand or concept. 
                         Driven by a desire for constant growth, I challenge myself to learn and adapt to the ever-evolving world of web development.

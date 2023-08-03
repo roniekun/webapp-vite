@@ -61,7 +61,7 @@
    color: #FFB600;
    z-index: 1;
    margin-top: 10%;
-   font-family: 'Poppins';
+   font-family: 'Clash Display';
    text-align: center;
  
 }
@@ -79,7 +79,6 @@
 }
 .request_btn {
     font-size: 18px;
-    font-family: 'Manrope';
     border: none;
     font-weight: 400;
     width: fit-content;
@@ -172,7 +171,7 @@
 }
 .ptag_home_title{
     text-align: center;
-    font-family: 'Futura PT';
+    font-family: 'Clash Display';
     font-weight:500;
     font-size: 28px;
     line-height: 50px;

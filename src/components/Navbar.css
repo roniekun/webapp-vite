@@ -37,7 +37,7 @@
     z-index: 8888;
     background-color: rgba(250, 250, 250, 0.7); 
     backdrop-filter: blur(15px);
-    transition-duration: .3s;
+    transition-duration: .2s;
    
   
   }
@@ -92,7 +92,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    opacity: 1;
     justify-content: space-evenly;
     height: auto;
     margin: 5px;
@@ -123,13 +122,11 @@
     color: #687076;
     text-transform: capitalize;
     line-height: 21px;
-    font-size: 20px;
+    font-size: 17px;
     max-width: 150px;
-    font-weight: 400;
+    font-weight: 500;
     width: auto;
     text-align: justify;
-    font-family: 'Futura PT', sans-serif;
-    transition: .5s;
     overflow: hidden;
 
   
@@ -146,7 +143,7 @@
     background-image: linear-gradient(to right, rgba(109, 109, 109, 0.1), transparent);
     opacity: 0;
     z-index: 1;
-    transition:  all 1s;
+    transition: transform .5s;
   }
 
   .link_wrapper:hover .navbar_link{
@@ -223,7 +220,7 @@
       visibility: hidden;
       opacity: 0;
       /* animation: hide 0.5s cubic-bezier(.29,.3,0,.95) ; */
-      transform: scale(10);
+      transform: scale(45);
       /* transition: transform .2s ease-in ; */
       flex-direction: column;
       overflow-x: hidden;
@@ -242,11 +239,6 @@
       
 
       
-    }
-    .navbar_hidden .navbar_link, .navbar_wrapper{
-
-      opacity: 0;
-      transition: all .2s;
     }
     
     .links_container{
@@ -290,25 +282,24 @@
       height: fit-content;
       width: 100%;
       margin:0;
+    
   
     }
-  .navbar__hidden .navbar_link{
-
-    color: white;
-  }
     .navbar_link {
-      font-family: 'Futura PT', sans-serif; 
+      font-family: 'Clash Display', sans-serif; 
       display: flex;
       color: black;
-      font-size: 28px;
+      font-size: 24px;
       text-transform: uppercase;
-      opacity: 1;
+      opacity: .8;
       align-items: center;
       justify-content: center;
       text-decoration: none;
       margin: 10px;
-      width: auto;
-      font-weight: 400;
+      width: max-content;
+      font-weight: 700;
+     
+      
 
     }
     .link_wrapper:hover  .navbar_link{
@@ -319,15 +310,15 @@
   .active_link{
     
       color: black;
-     font-weight: 400;
       opacity: 1;
-      transform: scale(1.025);
+      transform: scale(1.1);
+      
   
      
       
     
     }
-   
+  
   
 
   }

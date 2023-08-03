@@ -30,7 +30,7 @@ const PortfolioContent = () => {
 
     <div className='card_container'>
         <p className='format_text'> Specialize in creating stunning website landing pages and portfolios 
-                that showcase your unique brand and captivate your audience.
+                that showcase your unique brand and captivate your audience. <br />
                 With my expertise in web design and content creation, I help businesses
                 and individuals establish a strong online presence that leaves a lasting impression.</p>
 

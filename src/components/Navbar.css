@@ -223,8 +223,8 @@
       visibility: hidden;
       opacity: 0;
       /* animation: hide 0.5s cubic-bezier(.29,.3,0,.95) ; */
-      transform: scale(5);
-      transition: 0.3s ease-in ;
+      transform: scale(10);
+      /* transition: transform .2s ease-in ; */
       flex-direction: column;
       overflow-x: hidden;
       justify-content: space-between;
@@ -239,8 +239,14 @@
       position: fixed;
       inset: 0;
       border: 1px solid rgba(11,15,25,.1);
+      
 
       
+    }
+    .navbar_hidden .navbar_link, .navbar_wrapper{
+
+      opacity: 0;
+      transition: all .2s;
     }
     
     .links_container{
@@ -310,8 +316,7 @@
       color:black;
       scale: 0.925;
     }
-    
-    .navbar_link.active{
+  .active_link{
     
       color: black;
      font-weight: 400;

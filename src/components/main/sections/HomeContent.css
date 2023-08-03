@@ -339,7 +339,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin:5%;
+    margin-block:5%;
     padding-top: 50%;
     width: 90vw;
   
@@ -377,14 +377,15 @@
 .ptag_home_title{
     font-size: 24px;
     font-weight: 600;
+   
 }
 
 .ptag_home{
-    width: 80vw;
+    width: 95%;
     font-size: 18px;
     color: black;
     z-index: 2;
-    text-align: center;
+    text-align: left;
     font-size: 16px;
     
 }
@@ -394,7 +395,7 @@
  margin-top: 0;
 }
 .contact_form_container{
-    width: 90%;
+    width: 95%;
     height: 700px;
     transform: translate(-50%, -10%);
   

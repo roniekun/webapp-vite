@@ -21,6 +21,10 @@ const UsefulLinks = () => {
         <li className='link' >
           <a href="https://realtimecolors.com" target="_blank" rel="noopener noreferrer">Realtime Colors</a>
         </li>
+        <li className='link' >
+          <a href=" https://web.dev/patterns/" target="_blank" rel="noopener noreferrer">Patterns</a>
+        </li>
+       
  
       
       </ul>

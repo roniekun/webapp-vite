@@ -96,7 +96,6 @@
     justify-content: space-evenly;
     height: auto;
     margin: 5px;
-    height: 40px;
     text-align: center;
   }
 
@@ -115,10 +114,6 @@
     
    
   }
-  .navbar__hidden .navbar_link{
-
-    color: rgb(66, 66, 66);
-  }
   
   .navbar_link {
     position: relative;
@@ -129,38 +124,59 @@
     text-transform: capitalize;
     line-height: 21px;
     font-size: 20px;
+    max-width: 150px;
     font-weight: 400;
     width: auto;
     text-align: justify;
     font-family: 'Futura PT', sans-serif;
     transition: .5s;
+    overflow: hidden;
 
   
   }
 
-  .link_wrapper:hover{
-
-    /* background-color: rgba(241, 241, 241, 0.7); ; */
-    border-radius: 10px;
+  .navbar_link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: translateX(-100%);
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(to right, rgba(109, 109, 109, 0.1), transparent);
+    opacity: 0;
+    z-index: 1;
+    transition:  all 1s;
   }
 
-  
-  .link_wrapper:hover  .navbar_link{
-   
-    color:#0183BE;
-    text-decoration: none;
-  
+  .link_wrapper:hover .navbar_link{
 
+    color: black;
+  }
+  
+  .link_wrapper:hover .navbar_link::after {
+
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%,0);
+    
 
     
   }
-  
-  .navbar_link.active {
- 
-    /* color: #006ADC; */
-    font-weight: 700;
-    transform: scale(1.025);
-  
+.active_link{
+
+  color: #181818;
+}
+.active_link::after {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%,0);
+
+
   }
   
   @media (max-width: 600px) {
@@ -175,7 +191,7 @@
       height: 100vh;
       width: 100vw;
       /* background-color: #0E2E47; */
-       background-color: #adacac;
+       background-color: #f0efef;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
       overflow-y: hidden;
       z-index: 9999;
@@ -215,7 +231,7 @@
       height: 100vh;
       width: 100vw;
       /* background-color: #0E2E47; */
-      background-color: #adacac;
+      background-color: #f0efef;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
       overflow-y: hidden;
       z-index: 9999;
@@ -285,7 +301,7 @@
       justify-content: center;
       text-decoration: none;
       margin: 10px;
-      width: 100%;
+      width: auto;
       font-weight: 400;
 
     }
@@ -296,7 +312,7 @@
     }
     
     .navbar_link.active{
-      background-color: #687076;
+    
       color: black;
      font-weight: 400;
       opacity: 1;

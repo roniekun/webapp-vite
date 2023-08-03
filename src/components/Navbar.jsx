@@ -7,7 +7,7 @@ import { useState } from 'react';
 
 const Navbar = ({ showNavbar, isDesktop, isSmallScreen, setShowNavbar }) => {
   const location = useLocation();
-  const [isActive, setIsActive] = useState(true);
+
 
   const links = [
     { to: '/', text: 'home' },
@@ -19,7 +19,7 @@ const Navbar = ({ showNavbar, isDesktop, isSmallScreen, setShowNavbar }) => {
   ];
 
   const handleLinkClick = () => {
-    setIsActive(true);
+  
     setShowNavbar(!isSmallScreen);
     console.log('Link clicked and active');
   };
@@ -44,7 +44,7 @@ const Navbar = ({ showNavbar, isDesktop, isSmallScreen, setShowNavbar }) => {
                 >
                   <NavLink
                     onClick={() => handleLinkClick(location.pathname === link.to)}
-                    className={`navbar_link ${location.pathname === link.to ? 'active' : ''}`}
+                    className={`navbar_link ${location.pathname === link.to ? 'active_link' : ''}`}
                     to={link.to}
                   >
                     {/* {isSmallScreen && isActive && location.pathname === link.to && <ActiveIcon />} */}

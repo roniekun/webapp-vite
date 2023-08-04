@@ -15,7 +15,7 @@
     z-index: 8888;
     transition: .2s;   
     transition-duration:  .3s;
-    background-color: rgba(247, 246, 246, 0.1); 
+    /* background-color: rgba(247, 246, 246, 0.1);  */
 
   
    
@@ -47,12 +47,13 @@
     content: '';
     width: 100%;
     position: absolute;
-    height: 120px;
+    height: 200px;
     transition-duration: .5s;
     z-index: 0;
-   top:0;
-
-    background: linear-gradient(to bottom, rgb(218, 217, 217), rgb(255, 255, 255));
+    transform: translateY(-12%);
+    top:0;
+    background: linear-gradient(to bottom, rgba(128, 128, 128, 0.6), rgba(247, 245, 245, 0.025));
+    /* background-color: red; */
    
     
   }

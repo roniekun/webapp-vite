@@ -2,7 +2,6 @@ import { NavLink, useLocation } from 'react-router-dom';
 import './Navbar.css';
 import { ThemeContext } from '../context/ThemeContext';
 import SocialLinks from './icons/SocialLinks';
-import { useState } from 'react';
 import SiteLogo from './SiteLogo';
 
 
@@ -41,7 +40,7 @@ const Navbar = ({ showNavbar, isDesktop, isSmallScreen, setShowNavbar }) => {
               {links.map((link) => (
                 <div
                   className="link_wrapper"
-                  key={link}
+                  key={link.to}
                 >
                   <NavLink
                     onClick={() => handleLinkClick(location.pathname === link.to)}

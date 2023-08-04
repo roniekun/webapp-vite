@@ -1,6 +1,5 @@
 import { ThemeContext } from '../context/ThemeContext';
 import './Header.css';
-
 import SiteLogo from './SiteLogo';
 
 
@@ -10,7 +9,7 @@ function Header({ showNavbar, isSmallScreen, isDesktop, setShowNavbar }) {
       {({ theme }) => (
         <>
           <div id={`component-${theme}`}  className='header__container'>
-          {/* {isSmallScreen &&( <SiteLogo/>)} */}
+          {isSmallScreen &&( <SiteLogo transform={'translate(10%)'}/> )}
             </div>
         </>
       )}

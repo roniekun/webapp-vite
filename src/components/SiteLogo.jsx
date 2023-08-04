@@ -12,25 +12,22 @@ const StyledDiv = styled.div`
     align-items:center;
     zIndex:9999;
     cursor:pointer;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: sans-serif;
     letter-spacing: 1px;
-    text-transform: uppercase;
+    text-transform: Capitalize;
     font-size:14px;
     width:fit-content;
     height: fit-content;
+    font-size: 18px;
     top:0;
-    color: #687076;
-    // background: red;
-    // height:50px;
-    // width:50px;
-    // border-radius: 5 run0%;
+    color: #272727;
+    font-weight: 700;
 
 }
 
     svg {
       fill: white;
-      height: 20px;
-      width: 20px;
+  
       transition: transform 0.3s ease;
     }
 
@@ -54,13 +51,11 @@ const StyledDiv = styled.div`
 
 `;
 
-const SiteLogo = ({setColor}) => {
+const SiteLogo = ({transform}) => {
   return (
     <StyledDiv>
-    <NavLink to='/' >
-    <div style={{color: setColor, fontWeight: '600'}} className='site_logo_container'>
-    <span>ロニ</span>
-    </div>
+    <NavLink to='/' style={{transform: transform}} className='site_logo_container'>
+    <span>Discreet</span>
     </NavLink> 
     </StyledDiv>
   )

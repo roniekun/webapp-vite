@@ -54,7 +54,7 @@ const ContactForm = () => {
 
     
 
-    if (formData.firstname && formData.lastname && formData.email && formData.message && isChecked) {
+    if (formData.firstname  && formData.email && formData.message && isChecked) {
       
       formData.name = formData.firstname + ' ' + formData.lastname;
       setIsSubmitting(true);

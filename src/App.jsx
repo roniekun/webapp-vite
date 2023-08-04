@@ -35,9 +35,9 @@ const App = () => {
   const handleScroll = useCallback(() => {
     const currentScroll = window.scrollY;
     if (isDesktop){
-    setShowNavbar( currentScroll === 0); }
-    // scrollPosition > currentScroll ||
-    // setShowNavbar(true); shows Navigation bar
+    setShowNavbar( scrollPosition > currentScroll || currentScroll === 0); 
+  }
+
     setScrollPosition(currentScroll);
   }, [scrollPosition]);
 
@@ -47,7 +47,7 @@ const App = () => {
     };
 
     const handleScrollEvent = () => {
-      handleScroll(scrollPosition);
+      handleScroll(scrollPosition, isDesktop);
     };
 
     window.addEventListener('resize', handleResizeEvent);

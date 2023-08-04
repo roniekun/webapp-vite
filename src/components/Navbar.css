@@ -3,20 +3,20 @@
 
     box-sizing: border-box;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
     margin-top: 0;
     list-style: none;
-    width: 100%;
+    width: 100vw;
     top:0;
     position: fixed;
     height: 175px;
     z-index: 8888;
-    /* backdrop-filter: blur(100px); */
     transition: .2s;   
     transition-duration:  .3s;
-    /* background-color: red; */
+  
+   
 
   
   }
@@ -25,7 +25,7 @@
     top:0;
     box-sizing: border-box;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-self: center;
     align-items: center;
     flex-direction: row;
@@ -35,7 +35,7 @@
     position: fixed;
     height: 60px;
     z-index: 8888;
-    background-color: rgba(250, 250, 250, 0.7); 
+    background-color: rgba(250, 250, 250, 0.5); 
     backdrop-filter: blur(15px);
     transition-duration: .2s;
    
@@ -104,7 +104,6 @@
     position: relative;
     justify-content: center;
     align-items: center;
-    width: 1000px;
     height: 60px;
     overflow: hidden;
     padding: 10px;
@@ -118,12 +117,12 @@
     text-decoration: none;
     letter-spacing: 1px;
     display: flex;
-    color: #687076;
+    color: var(--gray);
     text-transform: capitalize;
-    line-height: 21px;
-    font-size: 17px;
+    line-height: 24px;
+    font-size: 18px;
     max-width: 150px;
-    font-weight: 500;
+    font-weight: 400;
     width: auto;
     text-align: justify;
     overflow: hidden;
@@ -165,7 +164,7 @@
   }
 .active_link{
 
-  color: #181818;
+  color: var(--gold);
 }
 .active_link::after {
     opacity: 1;
@@ -225,7 +224,7 @@
       transform-origin: top;
       transform: translateY(-100%);
       /* animation: hide 0.5s cubic-bezier(.29,.3,0,.95) ; */
-      /* transition: transform .2s ease-in ; */
+      transition: .3s cubic-bezier(1,.3,0,.95)  ;
       flex-direction: column;
       overflow-x: hidden;
       justify-content: space-between;
@@ -290,7 +289,7 @@
   
     }
     .navbar_link {
-      font-family: 'Clash Display', sans-serif; 
+  
       display: flex;
       color: black;
       font-size: 16px;

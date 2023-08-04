@@ -58,7 +58,7 @@
    width: fit-content;
    font-size: 50px;
    line-height: 60px;
-   color: #FFB600;
+   color: var(--gold);
    z-index: 1;
    margin-top: 10%;
    font-family: 'Clash Display';
@@ -191,10 +191,13 @@
     box-sizing: border-box;
     border-radius: 7px;
     padding-bottom: 12%;
+    cursor: pointer;
+    color: #181818;
 
+}
+.second_container:hover{
 
-
-
+    color:inherit;
 }
 .second_container::after{
     content: '';
@@ -205,10 +208,12 @@
     z-index: 1;
     background: linear-gradient(to top, #142A39, transparent);
     border-radius: 7px;
+   
     
    
 
 }
+
 .third_container{
     display: flex;
     font-size: 50px;
@@ -222,10 +227,12 @@
     box-sizing: border-box;
     border-radius: 7px;
     padding-bottom: 10%;
+    color: #181818;
 
-    
-   
+}
+.third_container:hover{
 
+    color: inherit;
 }
 
 .third_container::after{

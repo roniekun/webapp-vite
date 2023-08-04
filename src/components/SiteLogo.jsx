@@ -1,9 +1,10 @@
 import React from 'react'
 import styled from 'styled-components';
-import { ReactComponent as MyLogo } from './sitelogo.svg' ;
+import { NavLink } from 'react-router-dom';
+// import { ReactComponent as MyLogo } from './sitelogo.svg' ;
 
 const StyledDiv = styled.div`
-.site__logo__container {
+.site_logo_container {
    
     position:relative;
     display:flex;
@@ -11,16 +12,19 @@ const StyledDiv = styled.div`
     align-items:center;
     zIndex:9999;
     cursor:pointer;
-    font-family: 'VT323', monospace;
+    font-family: 'Noto Sans JP', sans-serif;
     letter-spacing: 1px;
     text-transform: uppercase;
-    font-size:20px;
+    font-size:14px;
     width:fit-content;
     height: fit-content;
     top:0;
     color: #687076;
-    
-  
+    // background: red;
+    // height:50px;
+    // width:50px;
+    // border-radius: 5 run0%;
+
 }
 
     svg {
@@ -50,12 +54,14 @@ const StyledDiv = styled.div`
 
 `;
 
-const SiteLogo = ({setColor, Left}) => {
+const SiteLogo = ({setColor}) => {
   return (
     <StyledDiv>
-    <div style={{color: setColor, left: Left}} className='site__logo__container'>
-    <MyLogo/><span>R</span>
+    <NavLink to='/' >
+    <div style={{color: setColor, fontWeight: '600'}} className='site_logo_container'>
+    <span>ロニ</span>
     </div>
+    </NavLink> 
     </StyledDiv>
   )
 }

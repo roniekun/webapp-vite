@@ -21,7 +21,7 @@ function Footer({ showNavbar, isSmallScreen}) {
     <ThemeContext.Consumer>
   {({ theme }) => (
 
-    <div id={`component-${theme}`} className={`footer__container ${showFooter ? 'footer__container' :'hidden'}`}>
+    <div id={`component-${theme}`} className='footer_container'>
       
           <UsefulLinks/>
        

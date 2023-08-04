@@ -104,7 +104,7 @@ const ContactForm = () => {
             fontWeight:'bold',
             fontSize: '14px',
              marginLeft: '5px'}}>
-              Firstname <br/>
+              Firstname <span>(required)</span> <br/>
               </label>
             <input
               className='text__input'
@@ -132,7 +132,7 @@ const ContactForm = () => {
               name="lastname"
               value={formData.lastname}
               onChange={handleChange}
-              required
+        
             />
           </div>
         </div>
@@ -142,7 +142,7 @@ const ContactForm = () => {
                   fontWeight:'bold',
                   fontSize: '14px',
                   marginLeft: '5px'}}>
-                 Email <br/> </label>
+                 Email <span>(required)</span> <br/> </label>
           <input
             className='email__input'
             type="email"
@@ -158,7 +158,7 @@ const ContactForm = () => {
           <label htmlFor="message" 
                   style={{ color: '#687076',fontWeight:'bold',
                   fontSize: '14px', marginLeft: '5px'}}> 
-                  Message <br/> </label>
+                  Message  <span>(required)</span> <br/> </label>
           <textarea
             className='text__area'
             id="message"

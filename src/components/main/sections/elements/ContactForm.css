@@ -37,6 +37,10 @@
     
 
 }
+label span{
+    font-weight: 200;
+    font-family: 'Futura PT', sans-serif;
+}
 .text__input, .text__area, .email__input{
     border: 1px solid transparent;
     width: 100%;

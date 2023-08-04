@@ -3,6 +3,7 @@ import './Navbar.css';
 import { ThemeContext } from '../context/ThemeContext';
 import SocialLinks from './icons/SocialLinks';
 import { useState } from 'react';
+import SiteLogo from './SiteLogo';
 
 
 const Navbar = ({ showNavbar, isDesktop, isSmallScreen, setShowNavbar }) => {
@@ -35,12 +36,12 @@ const Navbar = ({ showNavbar, isDesktop, isSmallScreen, setShowNavbar }) => {
           id={`component-${themeContext.theme}`}>
             
             <>
-            {/* <SiteLogo Left={'0'}/> */}
+            <SiteLogo />
             <div className="links_container">
               {links.map((link) => (
                 <div
                   className="link_wrapper"
-                  key={link.to}
+                  key={link}
                 >
                   <NavLink
                     onClick={() => handleLinkClick(location.pathname === link.to)}

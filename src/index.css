@@ -1,3 +1,11 @@
+
+:root{
+    --gold: #FFB600;
+    --primary-color: #050914;
+    --orange: #a84916;
+    --gray: #6d6d6d;
+
+}
 body {
    margin: 0;
    font-family: 'Poppins', sans-serif;

@@ -1,6 +1,7 @@
 // import React, { useState } from 'react';
 import './HomeContent.css';
 import { ReactComponent as TrendingFlat } from './trending_flat.svg'
+import { NavLink} from 'react-router-dom';
 // import ContactForm from './elements/ContactForm';
 // import PageModal from './PageModal';
 
@@ -18,6 +19,7 @@ const HomeContent = () => {
   };
 
   return (
+
     <div className='home__content__container'>
       <div className='first_container'>
         <h1 className='hero'> 
@@ -29,21 +31,24 @@ const HomeContent = () => {
           Request Project <span className="material-symbols-outlined"><TrendingFlat/></span>
         </b>
       </div>
+
       <div className='second_layer'>
-      <div className='second_container'>
+
+      <NavLink to="/portfolio" className='second_container'>
         <h4 className='ptag_home_title'>Web Development</h4>
         <p className='ptag_home'>
           He creates websites using React and is currently expanding his expertise in front-end development.
         </p>
-      </div>
-      <div className='third_container'>
+      </NavLink>
+
+      <NavLink to="/gallery" className='third_container'>
         <p className='ptag_home_title'>Photography</p>
         <p className='ptag_home qoute'>
           I find joy in the art of Photography.
           While I don't limit myself to a specific niche,
           my portfolio reflects a diverse array of captivating shots.
         </p>
-      </div>
+      </NavLink>
       </div>
 
       <div className='forth__container'>

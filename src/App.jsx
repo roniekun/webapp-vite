@@ -7,6 +7,7 @@ import Home from './components/main/Home';
 import Contact from './components/main/Contact';
 import About from './components/main/About';
 import Portfolio from './components/main/Portfolio';
+import Gallery from './components/main/Gallery';
 // import Blog from './components/main/Blog';
 import NotFound from './components/main/NotFound';
 import Policy from './components/main/Policy';
@@ -99,6 +100,7 @@ const App = () => {
                   <Route path='/about' element={<About isSmallScreen={isSmallScreen} showNavbar={showNavbar} />} />
                   <Route path='/portfolio' element={<Portfolio isSmallScreen={isSmallScreen}  showNavbar={showNavbar} />} />
                   {/* <Route path='/blog' element={<Blog isSmallScreen={isSmallScreen}  showNavbar={showNavbar} />} /> */}
+                  <Route path='/gallery' element={<Gallery isSmallScreen={isSmallScreen}  showNavbar={showNavbar} />} />
                   <Route path='/contact' element={<Contact isSmallScreen={isSmallScreen}  showNavbar={showNavbar} />} />
                   <Route path='/policy' element={<Policy isSmallScreen={isSmallScreen}  showNavbar={showNavbar} />} />
                   <Route component={NotFound} />

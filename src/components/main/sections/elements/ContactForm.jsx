@@ -123,7 +123,7 @@ const ContactForm = () => {
              fontWeight:'bold',fontSize: '14px', 
              marginLeft: '5px'}}>
 
-              Lastname <br/>
+              Lastname <span>(optional)</span>  <br/>
               </label>
             <input
               className={'text__input'}
@@ -174,10 +174,10 @@ const ContactForm = () => {
                     alignItems: 'center'
       }}>
         <input type="checkbox" id="privacyAgreement" name="privacyAgreement" required  onChange={handleCheckboxChange}/> 
-      <label for="privacyAgreement" style={{marginLeft:'5px', color:'#181818', fontSize: '12px'}}>
+      <label htmlFor="privacyAgreement" style={{marginLeft:'5px', color:'#181818', fontSize: '12px'}}>
        
           By submitting the form, you agreed to the
-         </label>
+ 
         
          <NavLink to="/policy"
              onClick={(e) => {
@@ -187,6 +187,8 @@ const ContactForm = () => {
             }}  
             style={{fontSize:'12px', color: '#0A1F44', paddingInline:'3px'}}>
             Privacy Policy.</NavLink>
+            </label>
+
       </div>
         <button className={`submit__button ${isSubmitting ? 'loading' : ''}`} 
                   type="submit">

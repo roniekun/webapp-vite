@@ -32,13 +32,14 @@ const App = () => {
     setIsSmallScreen(screenWidth <= 600);
   }, []);
 
-  const handleScroll = useCallback(() => {
+    const handleScroll = useCallback(() => {
     const currentScroll = window.scrollY;
     if (isDesktop){
-    setShowNavbar( scrollPosition > currentScroll || currentScroll === 0); 
-  }
-
+    setShowNavbar( currentScroll === 0); 
     setScrollPosition(currentScroll);
+  } 
+  // scrollPosition > currentScroll || 
+   
   }, [scrollPosition]);
 
   useEffect(() => {

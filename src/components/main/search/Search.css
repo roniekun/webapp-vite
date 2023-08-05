@@ -1,0 +1,44 @@
+.gray{
+
+    color: var(--gray);
+     fill: var(--gray);
+
+}
+.black{
+
+    color:  #181818;
+    fill: #181818;
+}
+.search_container{
+    position: relative;
+    z-index: 1;
+    height:60px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.text_input{
+
+    width: 80% ;
+    height: 40px;
+    border: 1px var(--gray) solid;
+    border-radius: 20px;
+    background-color: #fafafa;
+    padding-inline:  10%;
+    position: absolute;
+}
+
+.search_icon{
+    height: 18px;
+    width: 18px;
+
+}
+.search_label:hover .search_icon{
+    fill: #181818;
+}
+.search_label:hover{
+    cursor: pointer;
+    color: #181818;
+}

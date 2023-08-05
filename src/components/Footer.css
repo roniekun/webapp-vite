@@ -9,10 +9,11 @@
     height: auto;
     position: relative;
     background-color:hsla(200,5%,8%,1);
+    background-color:hsla(200,5%,8%,1);
     background-image:
-    radial-gradient(at 21% 36%, hsla(289,31%,10%,1) 0px, transparent 50%),
-    radial-gradient(at 67% 75%, hsla(223,30%,10%,1) 0px, transparent 50%),
-    radial-gradient(at 74% 49%, hsla(230,70%,10%,1) 0px, transparent 50%);
+    radial-gradient(at 23% 21%, hsla(289,31%,6%,1) 0px, transparent 50%),
+    radial-gradient(at 67% 75%, hsla(223,30%,6%,1) 0px, transparent 50%),
+    radial-gradient(at 74% 49%, hsla(230,70%,6%,1) 0px, transparent 50%);
    
    
     

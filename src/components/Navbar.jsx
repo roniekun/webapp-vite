@@ -3,9 +3,10 @@ import './Navbar.css';
 import { ThemeContext } from '../context/ThemeContext';
 import SocialLinks from './icons/SocialLinks';
 import SiteLogo from './SiteLogo';
+import Search from './main/search/Search';
 
 
-const Navbar = ({ showNavbar, isDesktop, isSmallScreen, setShowNavbar }) => {
+const Navbar = ({ showNavbar, isSmallScreen, setShowNavbar, isDesktop }) => {
   const location = useLocation();
 
 
@@ -35,7 +36,7 @@ const Navbar = ({ showNavbar, isDesktop, isSmallScreen, setShowNavbar }) => {
           id={`component-${themeContext.theme}`}>
             
             <>
-            <SiteLogo />
+            <SiteLogo showNavbar={showNavbar} />
             <div className="links_container">
               {links.map((link) => (
                 <div
@@ -53,6 +54,7 @@ const Navbar = ({ showNavbar, isDesktop, isSmallScreen, setShowNavbar }) => {
                 </div>
               ))}
             </div></>
+            {isDesktop && <Search showNavbar={showNavbar}/>}
             <>
             {isSmallScreen &&
             <SocialLinks showNavbar={showNavbar} fillColor={'black'}  />}

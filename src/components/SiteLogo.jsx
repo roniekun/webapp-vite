@@ -20,7 +20,6 @@ const StyledDiv = styled.div`
     height: fit-content;
     font-size: 18px;
     top:0;
-    color: #272727;
     font-weight: 700;
 
 }
@@ -51,10 +50,10 @@ const StyledDiv = styled.div`
 
 `;
 
-const SiteLogo = ({transform}) => {
+const SiteLogo = ({transform, showNavbar}) => {
   return (
     <StyledDiv>
-    <NavLink to='/' style={{transform: transform}} className='site_logo_container'>
+    <NavLink to='/' style={{color: showNavbar ? '#6d6d6d' : '#181818', transform: transform}} className='site_logo_container'>
     <span>Discreet</span>
     </NavLink> 
     </StyledDiv>

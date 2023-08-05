@@ -43,6 +43,11 @@
    
   
   }
+
+  .navbar_hidden .navbar_link{
+
+    color: #181818;
+  }
   .navbar_container::before{
     content: '';
     width: 100%;
@@ -120,7 +125,7 @@
     font-family: sans-serif;
     letter-spacing: 1px;
     display: flex;
-    color: #272727;
+    color: var(--gray);
     text-transform: capitalize;
     line-height: 24px;
     font-size: 18px;

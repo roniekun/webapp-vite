@@ -3,7 +3,8 @@
     height: fit-content;
     width: fit-content;
     flex-direction: row;
-    
+    position: relative;
+    z-index: 9999;
 }
 .link__btn{
     border:none;
@@ -21,9 +22,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 10px   5px 10px;
+  margin: 10px 0px   5px 0px;
   border-radius: 50%;
-  margin: 0px;
   height: fit-content;
   width: fit-content; 
 }
@@ -36,12 +36,6 @@
 
 }
 
-.icon__container:hover{
-  background-color: rgba(10, 102, 194, 0.2);
-
- 
-
-}
 .social__icon svg {
     width: 20px;
     height: 20px;

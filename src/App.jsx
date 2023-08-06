@@ -38,6 +38,7 @@ const App = () => {
     setShowNavbar( currentScroll <= 100 ); 
   } 
     setScrollPosition(currentScroll);
+  
 
   // scrollPosition > currentScroll || 
    

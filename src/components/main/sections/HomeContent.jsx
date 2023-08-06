@@ -7,9 +7,6 @@ import RequestBtn from './requestBtn/RequestBtn';
 
 const HomeContent = () => {
   // const [showContactForm, setShowContactForm] = useState(false);
-
-
-
   return (
 
     <div className='home_content_container'>

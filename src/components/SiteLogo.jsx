@@ -53,7 +53,10 @@ const StyledDiv = styled.div`
 const SiteLogo = ({transform, showNavbar}) => {
   return (
     <StyledDiv>
-    <NavLink to='/' style={{color: showNavbar ? '#6d6d6d' : '#181818', transform: transform}} className='site_logo_container'>
+    <NavLink to='/' 
+    onClick={() => window.scrollTo({ top: 0 })}
+    style={{color: showNavbar ? '#6d6d6d' : '#181818', transform: transform}} 
+    className='site_logo_container'>
     <span>Discreet</span>
     </NavLink> 
     </StyledDiv>

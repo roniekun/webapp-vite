@@ -180,11 +180,8 @@ const ContactForm = () => {
  
         
          <NavLink to="/policy"
-             onClick={(e) => {
-            if (location.pathname === '/policy') {
-             e.preventDefault();     
-              }
-            }}  
+
+            onClick={() => window.scrollTo({ top: 0 })}
             style={{fontSize:'12px', color: '#0A1F44', paddingInline:'3px'}}>
             Privacy Policy.</NavLink>
             </label>

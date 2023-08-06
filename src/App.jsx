@@ -35,12 +35,12 @@ const App = () => {
     const handleScroll = useCallback(() => {
     const currentScroll = window.scrollY;
     if (isDesktop){
-    setShowNavbar( currentScroll <= 100 ); 
+    setShowNavbar(   scrollPosition > currentScroll || currentScroll <= 200 ); 
   } 
     setScrollPosition(currentScroll);
   
 
-  // scrollPosition > currentScroll || 
+
    
   }, [scrollPosition]);
 

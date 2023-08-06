@@ -5,10 +5,13 @@
     margin: 2% 5%;
     height: 60px;
     width: 250px;
+    position: relative;
+    
 
 
 }
 .request_btn {
+    position: relative;
     font-size: 18px;
     border: none;
     font-weight: 400;
@@ -56,6 +59,46 @@
    
 
 }
+.mail_svg{
+
+    position: absolute;
+    top:0;
+    transform: translate(20%, -100%);
+   align-self: center;
+   transition: .5s;
+   height: 30px;
+   width: 30px;
+    
+
+}
+
+.trendingflat_svg{
+
+transition: .5s;
+ display: flex;
+align-self: center;
+
+
+
+}
+
+
+.request_btn_container:hover .trendingflat_svg {
+
+transform: translateX(200%);
+transition: 1s;
+
+
+}
+.request_btn_container:hover .mail_svg{
+
+  
+    display: flex;
+   transform: translate(20%, 30%);
+
+}
+
+
 @media (max-width: 600px) {
 
 

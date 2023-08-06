@@ -15,7 +15,7 @@ const HomeContent = () => {
     <div className='home_content_container'>
       <div className='first_container'>
         <h1 className='hero'> 
-          Unlock your visual story:<br /> 
+          Unlock your visual story<br /> 
           </h1>
           <h3 className='sub_hero'>Transforming Visions into Digital Masterpiece</h3>
           <RequestBtn/>
@@ -23,14 +23,14 @@ const HomeContent = () => {
 
       <div className='second_layer'>
 
-      <NavLink to="/portfolio" className='second_container'>
+      <NavLink to="/portfolio"  onClick={() => window.scrollTo({ top: 0 })} className='second_container'>
         <h4 className='ptag_home_title'>Web Development</h4>
         <p className='ptag_home'>
           He creates websites using React and is currently expanding his expertise in front-end development.
         </p>
       </NavLink>
 
-      <NavLink to="/gallery" className='third_container'>
+      <NavLink to="/gallery" onClick={() => window.scrollTo({ top: 0 })} className='third_container'>
         <p className='ptag_home_title'>Photography</p>
         <p className='ptag_home qoute'>
           I find joy in the art of Photography.

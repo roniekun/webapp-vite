@@ -1,10 +1,8 @@
 .request_btn_container{
 
-   
-    padding: 5px 10px;
     margin: 2% 5%;
-    height: 60px;
-    width: 250px;
+    height: 50px;
+    width: 200px;
     position: relative;
     
 
@@ -104,7 +102,7 @@ transition: 1s;
 
 .request_btn{
 
-    font-size: 14px;
+    font-size: 16px;
     z-index: 2;
 
 }}

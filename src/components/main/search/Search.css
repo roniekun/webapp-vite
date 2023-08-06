@@ -1,7 +1,7 @@
 .gray{
 
     color: var(--gray);
-     fill: var(--gray);
+    fill: var(--gray);
 
 }
 .black{
@@ -17,6 +17,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+   
 
 }
 .text_input{
@@ -30,15 +31,17 @@
     position: absolute;
 }
 
+
 .search_icon{
     height: 18px;
     width: 18px;
 
 }
-.search_label:hover .search_icon{
-    fill: #181818;
-}
-.search_label:hover{
+.search_container:hover{
+
     cursor: pointer;
     color: #181818;
-}
+    fill: #181818;
+    font-weight: 500;
+
+} 

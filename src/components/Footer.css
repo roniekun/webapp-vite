@@ -5,7 +5,7 @@
     justify-content: space-around;
     align-items: center;
     width: 100vw;
-    padding: 50px 100px 100px 100px;
+    padding: 100px 100px 100px 100px;
     height: auto;
     position: relative;
     background-color:hsla(200,5%,8%,1);
@@ -42,7 +42,13 @@
     font-style: normal;
     text-align: center;
  }
+.footer_cta{
 
+  color:var(--gold);
+  font-size: 24px;
+  text-align: center;
+   margin-inline: 10%;
+}
 
  @media (max-width: 1024px) {
     .footer__container{
@@ -71,6 +77,11 @@
         color: #f6f6f6;
         text-justify: center;
         font-style: normal;
+     
+    }
+    .footer_cta{
+
+      font-size: 18px;
      
     }
 

@@ -141,14 +141,14 @@
 
   .link_wrapper:hover .navbar_link{
 
-    color: black;
+    color: #353535;
  
   
   }
 .active_link{
 
   /* color: var(--gold); */
-  color: black;
+   color: #353535;
 }
 
 

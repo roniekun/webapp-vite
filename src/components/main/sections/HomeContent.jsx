@@ -1,7 +1,7 @@
 // import React, { useState } from 'react';
 import './HomeContent.css';
-import { ReactComponent as TrendingFlat } from './trending_flat.svg'
 import { NavLink} from 'react-router-dom';
+import RequestBtn from './requestBtn/RequestBtn';
 // import ContactForm from './elements/ContactForm';
 // import PageModal from './PageModal';
 
@@ -9,27 +9,16 @@ const HomeContent = () => {
   // const [showContactForm, setShowContactForm] = useState(false);
 
 
-  const email = 'roniebenitez01@gmail.com';
-  const subject = 'Request Project';
-  
-  const handleClick = () => {
-
-    const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
-    window.location.href = mailtoUrl;
-  };
 
   return (
 
-    <div className='home__content__container'>
+    <div className='home_content_container'>
       <div className='first_container'>
         <h1 className='hero'> 
           Unlock your visual story:<br /> 
           </h1>
           <h3 className='sub_hero'>Transforming Visions into Digital Masterpiece</h3>
-   
-        <b className='request_btn shadow' data-copy-text='roniebenitez01@gmail.com'  onClick={handleClick}>
-          Request Project <span className="material-symbols-outlined"><TrendingFlat/></span>
-        </b>
+          <RequestBtn/>
       </div>
 
       <div className='second_layer'>

@@ -9,7 +9,7 @@
 }
   
   
-.home__content__container{
+.home_content_container{
     height: 100%;
     width:100vw;
     position: relative;
@@ -77,48 +77,7 @@
    
 
 }
-.request_btn {
-    font-size: 18px;
-    border: none;
-    font-weight: 400;
-    width: fit-content;
-    height: fit-content;
-    padding: 5px 10px;
-    margin: 2% 5%;
-    cursor: pointer;
-    font-weight: 500;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 3px;
-    background-color: #142A39;
-    color: white;
-    position: relative; /* Make sure the element has a positioned container */
-    overflow: hidden; /* Hide overflowing animation */
-    fill:white;
-  }
-  .request_btn::before{
-    content: '';
-    width: 200%;
-    height: 100%;
-    position: absolute;
-    background-color: #FFB600;;
-    z-index: -1;
-    transform: translateX(-100%) skew(20deg);
-    transition: .5s ease;
 
-  }
- 
-  .request_btn:hover::before {
-    transform: translateX(0) skew(50deg);
-}
-.request_btn:hover{
-
-    color: black;
-    fill:black;
-
-}
 .second_layer{
 
  
@@ -321,7 +280,7 @@
 
 
       
-.home__content__container{
+.home_content_container{
     height: 100%;
     width:100vw;
     position: relative;
@@ -360,9 +319,9 @@
 }
 .hero{
    font-size: 24px;
-   font-weight: 700;
+   font-weight: 900;
    padding-inline: 10%;
-   line-height: 28px;
+   line-height: 24px;
    letter-spacing: 1px;
   
    
@@ -409,12 +368,7 @@
     transform: translate(-50%, -10%);
   
 }
-.request_btn{
 
-    font-size: 14px;
-    z-index: 2;
-
-}
 .tech_lists li{
 
     display: flex;

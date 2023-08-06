@@ -3,6 +3,7 @@ import { ThemeContext } from '../context/ThemeContext';
 import './Footer.css'; 
 import SocialLinks from './icons/SocialLinks';
 import UsefulLinks from './main/sections/elements/UsefulLinks';
+import RequestBtn from './main/sections/requestBtn/RequestBtn';
 
 
 function Footer({ showNavbar, isSmallScreen}) {
@@ -22,6 +23,12 @@ function Footer({ showNavbar, isSmallScreen}) {
   {({ theme }) => (
 
     <div id={`component-${theme}`} className='footer_container'>
+
+      <>
+       <h1 className='footer_cta' >Your website, your brand's canvas – let's paint your online masterpiece today!</h1>
+           <RequestBtn/>
+      </>
+     
       
           <UsefulLinks/>
        

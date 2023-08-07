@@ -17,7 +17,11 @@ const RequestBtn = () => {
   return (
     <div className='request_btn_container'>
            <b className='request_btn shadow' data-copy-text='roniebenitez01@gmail.com'  onClick={handleClick}>
-          Request Project <span><Mail className='mail_svg'/></span> <span><TrendingFlat className='trendingflat_svg'/></span>
+          Request Project 
+         
+          <div className='svg_container'> 
+          <Mail className='mail_svg'/>
+          <TrendingFlat className='trendingflat_svg'/></div>
         </b>
     </div>
   )

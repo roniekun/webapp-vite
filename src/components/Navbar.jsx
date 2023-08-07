@@ -32,12 +32,17 @@ const Navbar = ({ showNavbar, isSmallScreen, setShowNavbar, isDesktop }) => {
       <ThemeContext.Consumer>
         {(themeContext) => (
           <nav 
-          className={showNavbar ? 'navbar_container' : 'navbar_hidden'}  
+          // className={showNavbar ? 'navbar_container' : 'navbar_hidden'}
+          className={`navbar_container ${showNavbar ? '' : 'hide'}`}
+
           id={`component-${themeContext.theme}`}>
+
+          { isSmallScreen && <h1>Navigations</h1>} 
             
             <>
-            <SiteLogo showNavbar={showNavbar} />
+           {isDesktop && <SiteLogo showNavbar={showNavbar} />}
             <div className="links_container">
+
               {links.map((link) => (
                 <div
                   className="link_wrapper"
@@ -55,12 +60,23 @@ const Navbar = ({ showNavbar, isSmallScreen, setShowNavbar, isDesktop }) => {
               ))}
             </div></>
             {isDesktop && <Search showNavbar={showNavbar}/>}
-            <>
+            
             {isSmallScreen &&
-            <SocialLinks showNavbar={showNavbar} fillColor={'black'}  />}
+
+            <>
+            <h1> Social Accounts</h1>
+             <SocialLinks 
+            flexDirection={'column'}
+            displayNames={true} height= {'20px'}
+            width={'20px'}
+            fontSize={'18px'} 
+            textTransform={'capitalize'}
+            showNavbar={showNavbar}
+             fillColor={'black'}  /></>
+           }
             
            {/* {isSmallScreen &&   <ToggleTheme isSmallScreen={isSmallScreen} showNavbar={showNavbar} fontColor="white" position="relative" />} */}
-            </>
+            
           </nav>
         )}
       </ThemeContext.Consumer>

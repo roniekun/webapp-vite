@@ -1,10 +1,9 @@
-.social__links__container{
+.social_links_container{
     display: flex;
     height: fit-content;
     width: fit-content;
     flex-direction: row;
     position: relative;
-    z-index: 9999;
 }
 .link__btn{
     border:none;
@@ -22,16 +21,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px 0px   5px 0px;
   border-radius: 50%;
   height: fit-content;
   width: fit-content; 
 }
 .userHandle__container{
-  padding: 10px 0px 5px 0px;
   margin: 0px;
-  font-size: 16px;
-  font-family: 'VT323', monospace;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: sans-serif;
  
 
 }
@@ -46,31 +44,21 @@
 
 
   }
-
-  .social__icon svg:hover {
-    scale: 1.01;
-
-
-  } 
- 
   
   
-.link__btn:hover{
-  
-    scale: 1.01;
-    filter: brightness(125%);
 
-    
-
-}
 
 @media (max-width: 600px) {
 
-.social__links__container{
-    margin-bottom: 20px;
+.social_links_container{
+    position: relative;
     display: flex;
-    align-items: flex-start;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
     justify-content: center;
+    padding: 10px;
+
    
 }
 .icon__container{

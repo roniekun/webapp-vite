@@ -11,7 +11,18 @@ import { ThemeContext } from '../../context/ThemeContext';
 
 
 
-const SocialLinks = ({ isSmallScreen, isDesktop, showNavbar, fillColor, displayNames, flexDirection}) => {
+const SocialLinks = ({ 
+  isSmallScreen,
+    showNavbar,
+     fillColor,
+      displayNames,
+      displayHandles,
+       flexDirection,
+       height,
+       width,
+       fontSize,
+       textTransform
+      }) => {
   const socialMediaLinks = [
     { name: 'LinkedIn', fill: '#0A66C2', icon:  <LinkedinIcon />, url: 'https://linkedin.com/in/roniebenitez', userhandle : '/in/roniebenitez' },
     { name: 'Github', fill: '#181717',icon:  <GithubIcon/>, url: 'https://www.github.com/roniekun',userhandle: '/roniekun' },
@@ -24,7 +35,8 @@ const SocialLinks = ({ isSmallScreen, isDesktop, showNavbar, fillColor, displayN
   return (
     <ThemeContext.Consumer>
   {({ theme }) => (
-  <div className='social__links__container' style={isSmallScreen ? { flexDirection: flexDirection } : {}}>
+  <div className='social_links_container' style={{ flexDirection: flexDirection }}>
+
  
       {socialMediaLinks.map((link) => (
         
@@ -39,13 +51,16 @@ const SocialLinks = ({ isSmallScreen, isDesktop, showNavbar, fillColor, displayN
   >
     <>
     <div 
-  
-    className='icon__container'> 
+    className='icon__container'
+    style={{ width: width, height: height}}
+    > 
 
     {link.icon}
     </div>
-    <div className='userHandle__container'>
-      {displayNames && link.userhandle}
+    <div className='userHandle__container'
+    style={{fontSize:fontSize, textTransform: textTransform}}>
+      {displayHandles && link.userhandle}
+      {displayNames && link.name}
       </div>
       </>
 

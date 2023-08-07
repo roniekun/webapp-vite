@@ -47,7 +47,7 @@ function Footer({ showNavbar, isSmallScreen}) {
 
     <> 
       <SocialLinks fillColor={"white"} 
-      displayNames={isSmallScreen?false:true} 
+      displayHandles={isSmallScreen?false:true} 
       isSmallScreen={isSmallScreen} 
       flexDirection={"row"}/>
 

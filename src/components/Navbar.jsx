@@ -36,8 +36,8 @@ const Navbar = ({ showNavbar, isSmallScreen, setShowNavbar, isDesktop }) => {
           className={`navbar_container ${showNavbar ? '' : 'hide'}`}
 
           id={`component-${themeContext.theme}`}>
-
-          { isSmallScreen && <h1>Navigations</h1>} 
+            <>
+          { isSmallScreen && <div className='nav_row_title'> <h1 >Navigations</h1> </div>} 
             
             <>
            {isDesktop && <SiteLogo showNavbar={showNavbar} />}
@@ -59,12 +59,13 @@ const Navbar = ({ showNavbar, isSmallScreen, setShowNavbar, isDesktop }) => {
                 </div>
               ))}
             </div></>
+            </>
             {isDesktop && <Search showNavbar={showNavbar}/>}
             
             {isSmallScreen &&
 
             <>
-            <h1> Social Accounts</h1>
+          <div className='nav_row_title'><h1 className='nav_row_title'> Social Accounts</h1></div>
              <SocialLinks 
             flexDirection={'column'}
             displayNames={true} height= {'20px'}

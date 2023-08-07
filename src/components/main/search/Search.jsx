@@ -21,10 +21,11 @@ import './Search.css'
 
 const Search = ({showNavbar}) => {
   return (
-    <div onClick={() => alert('Still under construction :)')} className={`search_container ${showNavbar ? 'gray' : 'black'}`}>
+    <div onClick={() => alert('Still under construction :)')} className={`search_container ${showNavbar ? 'gray' : ' white'}`}>
     {/* <input className='text_input' type="text" /> */}
     <label className='search_label' htmlFor="text_input">
-     Search <SearchIcon className='search_icon' />
+       
+     <SearchIcon  className='search_icon' />
     </label>
 
     </div>

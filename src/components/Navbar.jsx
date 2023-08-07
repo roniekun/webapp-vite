@@ -40,7 +40,7 @@ const Navbar = ({ showNavbar, isSmallScreen, setShowNavbar, isDesktop }) => {
           { isSmallScreen && <div className='nav_row_title'> <h1 >Navigations</h1> </div>} 
             
             <>
-           {isDesktop && <SiteLogo showNavbar={showNavbar} />}
+           {isDesktop && <SiteLogo showNavbar={showNavbar} color={'#fafafa'} />}
             <div className="links_container">
 
               {links.map((link) => (
@@ -60,7 +60,7 @@ const Navbar = ({ showNavbar, isSmallScreen, setShowNavbar, isDesktop }) => {
               ))}
             </div></>
             </>
-            {isDesktop && <Search showNavbar={showNavbar}/>}
+            {isDesktop && <Search showNavbar={showNavbar } color={ 'white'}/>}
             
             {isSmallScreen &&
 
@@ -73,7 +73,7 @@ const Navbar = ({ showNavbar, isSmallScreen, setShowNavbar, isDesktop }) => {
             fontSize={'18px'} 
             textTransform={'capitalize'}
             showNavbar={showNavbar}
-             fillColor={'black'}  /></>
+             fillColor={'#fafafa'}  /></>
            }
             
            {/* {isSmallScreen &&   <ToggleTheme isSmallScreen={isSmallScreen} showNavbar={showNavbar} fontColor="white" position="relative" />} */}

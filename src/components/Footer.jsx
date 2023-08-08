@@ -25,7 +25,8 @@ function Footer({ showNavbar, isSmallScreen}) {
     <div id={`component-${theme}`} className='footer_container'>
 
       <>
-       <h1 className='footer_cta' >Your website, your brand's canvas – let's paint your online masterpiece today!</h1>
+       <h1 className='footer_cta' >Your website, your brand's canvas – 
+       let's paint your online masterpiece today!</h1> <br />
            <RequestBtn/>
       </>
      
@@ -38,7 +39,6 @@ function Footer({ showNavbar, isSmallScreen}) {
        <div style={{ alignSelf: 'center'}}>
         <h1 style={{
               color: 'white',
-              fontFamily: 'Manrope', 
               letterSpacing: '2px',
               marginBottom: "24px", 
               fontSize: '16px'}}>
@@ -47,7 +47,6 @@ function Footer({ showNavbar, isSmallScreen}) {
 
     <> 
       <SocialLinks fillColor={"white"} 
-      displayHandles={isSmallScreen?false:true} 
       isSmallScreen={isSmallScreen} 
       flexDirection={"row"}/>
 

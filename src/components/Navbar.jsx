@@ -72,7 +72,9 @@ const Navbar = ({ showNavbar, isSmallScreen, setShowNavbar, isDesktop, isScroll 
             fontSize={'18px'} 
             textTransform={'capitalize'}
             showNavbar={showNavbar}
-             fillColor={'#fafafa'}  /></>
+            fillColor={'#fafafa'}
+            alignCenter={'center'}
+            /></>
            }
             
            {/* {isSmallScreen &&   <ToggleTheme isSmallScreen={isSmallScreen} showNavbar={showNavbar} fontColor="white" position="relative" />} */}

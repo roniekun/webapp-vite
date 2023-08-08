@@ -12,16 +12,16 @@ import { ThemeContext } from '../../context/ThemeContext';
 
 
 const SocialLinks = ({ 
-  isSmallScreen,
-    showNavbar,
      fillColor,
       displayNames,
       displayHandles,
+      displayIcons,
        flexDirection,
        height,
        width,
        fontSize,
-       textTransform
+       textTransform,
+       alignCenter
       }) => {
   const socialMediaLinks = [
     { name: 'LinkedIn', fill: '#0A66C2', icon:  <LinkedinIcon />, url: 'https://linkedin.com/in/roniebenitez', userhandle : '/in/roniebenitez' },
@@ -35,7 +35,7 @@ const SocialLinks = ({
   return (
     <ThemeContext.Consumer>
   {({ theme }) => (
-  <div className='social_links_container' style={{ flexDirection: flexDirection }}>
+  <div className='social_links_container' style={{ flexDirection: flexDirection, alignItems: alignCenter, justifyContent: alignCenter }}>
 
  
       {socialMediaLinks.map((link) => (
@@ -55,12 +55,13 @@ const SocialLinks = ({
     style={{ width: width, height: height}}
     > 
 
-    {link.icon}
+      {displayIcons && link.icon}
     </div>
     <div className='userHandle__container'
     style={{fontSize:fontSize, textTransform: textTransform}}>
       {displayHandles && link.userhandle}
       {displayNames && link.name}
+    
       </div>
       </>
 

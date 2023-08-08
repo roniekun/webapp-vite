@@ -12,15 +12,15 @@ const StyledDiv = styled.div`
     align-items:center;
     zIndex:9999;
     cursor:pointer;
-    font-family: sans-serif;
+    font-family: 'Clash Display', sans-serif;
     letter-spacing: 1px;
-    text-transform: Capitalize;
+    text-transform: uppercase;
     font-size:14px;
     width:200px;
     height: fit-content;
     font-size: 18px;
     top:0;
-    font-weight: 700;
+    font-weight:500;
 
 }
 
@@ -59,7 +59,7 @@ const SiteLogo = ({transform, showNavbar, color}) => {
     onClick={() => window.scrollTo({ top: 0 })}
     style={{color: showNavbar ? '#6d6d6d' : color, transform: transform}} 
     className='site_logo_container'>
-    <span>Discreet</span>
+    <span>roniekun</span>
     </NavLink> 
     </StyledDiv>
   )

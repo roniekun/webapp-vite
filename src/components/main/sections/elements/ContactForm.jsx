@@ -93,7 +93,8 @@ const ContactForm = () => {
 
   return (
     <div className='form_container'>
-      <h1 className='form_heading'><span> Bring to us your idea,</span>  <br />Let's Talk</h1>
+
+
       <form className='form' onSubmit={handleSubmit}>
 
 

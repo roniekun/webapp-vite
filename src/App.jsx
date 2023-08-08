@@ -21,28 +21,35 @@ import PageModal from './assets/PageModal'
 
 const App = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [isScroll, setIsScroll] = useState();
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 600);
   const [isDesktop, setIsDesktop] = useState(window.innerWidth > 600);
   const [showNavbar, setShowNavbar] = useState(window.innerWidth > 600 && window.scrollY === 0);
+
+
 
   const handleResize = useCallback(() => {
     const screenWidth = window.innerWidth;
     setIsDesktop(screenWidth > 600);
     setShowNavbar(screenWidth > 600);
     setIsSmallScreen(screenWidth <= 600);
-  }, []);
+
+  }, [isDesktop]);
 
     const handleScroll = useCallback(() => {
     const currentScroll = window.scrollY;
-    if (isDesktop){
-    setShowNavbar(   scrollPosition > currentScroll || currentScroll <= 200 ); 
-  } 
-    setScrollPosition(currentScroll);
+
+    if (isDesktop){ 
+      setShowNavbar(  scrollPosition > currentScroll || currentScroll <= 200 ); 
+      setScrollPosition(currentScroll);
+    }
+
+  setIsScroll(window.scrollY > 100);
+  console.log(isScroll);
+
+  }, [scrollPosition, isScroll]);
+
   
-
-
-   
-  }, [scrollPosition]);
 
   useEffect(() => {
     const handleResizeEvent = () => {
@@ -95,6 +102,7 @@ const App = () => {
                   isDesktop={isDesktop}
                   isSmallScreen={isSmallScreen}
                   setShowNavbar={setShowNavbar}
+                  isScroll={isScroll}
                 />
   
 

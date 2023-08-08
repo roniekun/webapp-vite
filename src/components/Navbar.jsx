@@ -6,7 +6,7 @@ import SiteLogo from './SiteLogo';
 import Search from './main/search/Search';
 
 
-const Navbar = ({ showNavbar, isSmallScreen, setShowNavbar, isDesktop }) => {
+const Navbar = ({ showNavbar, isSmallScreen, setShowNavbar, isDesktop, isScroll }) => {
   const location = useLocation();
 
 
@@ -20,21 +20,18 @@ const Navbar = ({ showNavbar, isSmallScreen, setShowNavbar, isDesktop }) => {
   ];
 
   const handleLinkClick = () => {
-  
+
+    window.scrollTo({ top: 0 })
     setShowNavbar(!isSmallScreen);
     console.log('Link clicked and active');
   };
-
-  
 
   return (
     <>
       <ThemeContext.Consumer>
         {(themeContext) => (
           <nav 
-          // className={showNavbar ? 'navbar_container' : 'navbar_hidden'}
-          className={`navbar_container ${showNavbar ? '' : 'hide'}`}
-
+          className={`navbar_container ${isScroll ? 'bg-color' : ''} ${showNavbar ? '' : 'hide'}`}
           id={`component-${themeContext.theme}`}>
             <>
           { isSmallScreen && <div className='nav_row_title'> <h1 >Navigations</h1> </div>} 
@@ -49,7 +46,8 @@ const Navbar = ({ showNavbar, isSmallScreen, setShowNavbar, isDesktop }) => {
                   key={link.to}
                 >
                   <NavLink
-                    onClick={() => handleLinkClick(location.pathname === link.to)}
+                    onClick={() => 
+                    handleLinkClick(location.pathname === link.to)}
                     className={`navbar_link ${location.pathname === link.to ? 'active_link' : ''}`}
                     to={link.to}
                   >

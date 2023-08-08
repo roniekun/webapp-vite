@@ -35,12 +35,8 @@
     width: 100vw;
     padding-bottom: 5%;
     box-sizing: border-box;
-    background-color: #181818;
-
-
-
 }
-
+/* 
 .first_container::after{
     content: '';
     position: absolute;
@@ -50,10 +46,7 @@
     background: linear-gradient(to top, #142A39, transparent);
     border-bottom: #142A39 1px solid ;
     transform: translateY(1%);
-
-   
-
-}
+} */
 .hero{
    position: relative;
    width: fit-content;
@@ -69,12 +62,12 @@
 .sub_hero{
     position: relative;
     font-size: 24px;
-    color: #687076;
+    color: #282B30;
     font-weight: 500;
     line-height: 1;
     height: fit-content;
     width: fit-content;
-    font-family: 'Manrope';
+  
    
 
 }
@@ -88,6 +81,7 @@
     justify-content: space-evenly;
     margin-top: 10%;
     align-items: center;
+   
 }
   
 .contact_form_container{
@@ -153,6 +147,7 @@
     padding-bottom: 12%;
     cursor: pointer;
     color: #181818;
+    
 
 }
 .second_container:hover{

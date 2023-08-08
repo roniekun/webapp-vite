@@ -1,4 +1,4 @@
-.form__container{
+.form_container{
     display: flex;
     height:100%;
     width: 100%;
@@ -7,30 +7,26 @@
     align-items: center;
     flex-direction: column;
     padding-block: 10%;
-    
-
-    
-
 }
-.form__heading{
-  
+
+.form_heading{
     width: 100%;
     margin: 5% 0 10% 0;
     font-size: 50px;
     font-weight: 900;
-    
 }
-.form__heading span{
+
+.form_heading span{
     font-size: 45px;
     font-weight: 600;
 }
-.first__layer{
+
+.form_first_layer{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     width: 100%;
-
-    
+    row-gap:30px;
 }
 
 .form{
@@ -40,66 +36,53 @@
     align-items: center;
     color:#C6CDD2;
     row-gap: 30px;
-
-    
-
 }
 
-.text__input, .text__area, .email__input{
+.form_text_input, .form_text_area, .form_email_input{
     border: 1px solid transparent;
     width: 100%;
     margin-top: 2%;
     margin-bottom: 4%;
     color:#606266;
     /* border: solid 1px #A9A9A9; */
-     border-bottom: 1px #606266 solid;
-     height:100px;
-     font-size: 16px;
+    border-bottom: 1px #606266 solid;
+    height:100px;
+    font-size: 16px;
     background-color: transparent;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-  
 }
-.text__input:focus, .text__area:focus, .email__input:focus{
-    outline: none;
 
+.form_text_input:focus, .form_text_area:focus, .form_email_input:focus{
+    outline: none;
 }
-.text__input:active,
-.text__area:active,
-.email__input:active {
+
+.form_text_input:active,
+.form_text_area:active,
+.form_email_input:active {
     border-color: #fff; 
 }
 
-/* .text__input:hover, .text__area:hover, .email__input:hover{
-
-    border: solid 1px #DCDFE6;
-} */
-.email__input{
-
+.form_email_input{
     padding: 3px;
     width:500px;
     height: 30px;
-
-
 }
 
-.text__input{
-
+.form_text_input{
     width:240px;
     height: 30px;
     padding: 3px;
-    
 }
-.text__area{
 
+.form_text_area{
     width:500px;
     resize: none;
     overflow-y: scroll;
     height: 30px;
-    
 }
-.submit__button{
-    
+
+.submit_button{
     margin-top:20px;
     border: 1px solid rgba(11,15,25,.1);
     color:#f5f5f5;
@@ -115,15 +98,13 @@
     letter-spacing: 1px;
     line-height: 1;
     background-color: #2C2C2C;
-
-
-
 }
-.loading{
 
+.loading{
     cursor: wait;
 }
-.submit__button:hover{
+
+.submit_button:hover{
     background-color: black;
     color: white;
     box-shadow:
@@ -131,12 +112,12 @@
     0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow at the bottom */
 }
 
-.error__firstname{
+.error_firstname{
     border-color: red;
-
 }
+
 @media (max-width: 600px) {
-    .form__container{
+    .form_container{
         border-radius: 2px;
         width: 100%;
         padding:5%;
@@ -144,47 +125,35 @@
     }
 
     .form{
-       
         width: 100%;
-
-    
     }
 
-    .first__layer{
-        flex-direction: column;
-        width: 100%;
-        padding: 2% 2% 0 2% ;
 
 
-    }
-    .first__layer{
-
+    .form_first_layer{
         align-items: center;
         width: 100%;
+        flex-direction: column;
+        width: 100%;
+        padding: 2% 2% 0 2%;
+        column-gap: 30px;
     }
-    .second__layer{
+
+    .form_second_layer{
         width: 100%;
         padding: 2%;
         display: flex;
         justify-content: center;
         align-items: center;
-     
     }
-    .text__input, .text__area, .email__input{
-   
+
+    .form_text_input, .form_text_area, .form_email_input{
         width: 90%;
         margin-top: 2%;
         margin-bottom: 2%;
-
-
     }
 
-    
-    .submit__button{
-
+    .submit_button{
         margin-bottom:10%;
-     
-       
     }
-
 }

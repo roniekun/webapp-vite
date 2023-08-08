@@ -3,7 +3,7 @@ import './Navbar.css';
 import { ThemeContext } from '../context/ThemeContext';
 import SocialLinks from './icons/SocialLinks';
 import SiteLogo from './SiteLogo';
-import Search from './main/search/Search';
+import RequestBtn from './main/sections/requestBtn/RequestBtn';
 
 
 const Navbar = ({ showNavbar, isSmallScreen, setShowNavbar, isDesktop, isScroll }) => {
@@ -58,7 +58,8 @@ const Navbar = ({ showNavbar, isSmallScreen, setShowNavbar, isDesktop, isScroll 
               ))}
             </div></>
             </>
-            {isDesktop && <Search showNavbar={showNavbar } color={ 'white'}/>}
+            {/* {isDesktop && <Search showNavbar={showNavbar } color={ 'white'}/>} */}
+            {isDesktop && <RequestBtn/>}
             
             {isSmallScreen &&
 

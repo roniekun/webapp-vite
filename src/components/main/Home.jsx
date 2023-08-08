@@ -5,7 +5,7 @@ function Home({isSmallScreen}) {
   
   return (
   <div className='home__container'>
-    <HomeContent/>
+    <HomeContent isSmallScreen={isSmallScreen}/>
     <Footer isSmallScreen={isSmallScreen}/>
    </div>
  

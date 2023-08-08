@@ -1,16 +1,13 @@
 import React from 'react';
 import './Menu.css';
 import { Twirl as Hamburger } from 'hamburger-react';
-import { ThemeContext } from '../../context/ThemeContext';
-import StringCharacterMapper from  '../main/animation/StringCharacterMapper';
-
+import { ThemeContext } from '../../../context/ThemeContext';
 
 const Menu = ({ position, showNavbar, isSmallScreen, setShowNavbar }) => {
   const handleClick = () => {
     setShowNavbar(!showNavbar);
-    console.log("clicking");
+    console.log("menu is clicked");
   };
-  const customString = 'menu';
   return (
     <ThemeContext.Consumer>
       {theme => (

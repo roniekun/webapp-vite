@@ -16,7 +16,7 @@ const StyledDiv = styled.div`
     letter-spacing: 1px;
     text-transform: Capitalize;
     font-size:14px;
-    width:fit-content;
+    width:200px;
     height: fit-content;
     font-size: 18px;
     top:0;
@@ -38,11 +38,13 @@ const StyledDiv = styled.div`
 
     @media (max-width:600px){
 
-      .site__logo__container{
+      .site_logo_container{
         position: relative;
         margin-block: 20px;  
         color: white;
-        fill: white; 
+        fill: white;
+        width:fit-content;
+        
 
       }
     }

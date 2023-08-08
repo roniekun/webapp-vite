@@ -11,7 +11,7 @@ import Gallery from './components/main/Gallery';
 // import Blog from './components/main/Blog';
 import NotFound from './components/main/NotFound';
 import Policy from './components/main/Policy';
-import Menu from './components/icons/Menu';
+import Menu from './components/icons/menu/Menu';
 import './App.css';
 import { ThemeProvider, ThemeContext } from './context/ThemeContext';
 import PageModal from './assets/PageModal'
@@ -121,7 +121,6 @@ const App = () => {
                   isDesktop={isDesktop}
                   showNavbar={showNavbar}
                 /> */}
-                {/* <Footer showNavbar={showNavbar} setShowNavbar={setShowNavbar} /> */}
               </div>
             );
           }}

@@ -92,15 +92,15 @@ const ContactForm = () => {
 
 
   return (
-    <div className='form__container'>
-      <h1 className='form__heading'><span> Bring to us your idea,</span>  <br />Let's Talk</h1>
+    <div className='form_container'>
+      <h1 className='form_heading'><span> Bring to us your idea,</span>  <br />Let's Talk</h1>
       <form className='form' onSubmit={handleSubmit}>
 
 
-        <div className='first__layer'>
+        <div className='form_first_layer'>
           
             <input
-              className='text__input'
+              className='form_text_input'
               type="text"
               id="firstname"
               name="firstname"
@@ -113,7 +113,7 @@ const ContactForm = () => {
 
 
             <input
-              className={'text__input'}
+              className='form_text_input'
               placeholder='Lastname (Optional)'
               id="lastname"
               name="lastname"
@@ -124,9 +124,9 @@ const ContactForm = () => {
       
         </div>
 
-         <div className='second__layer'>
+         <div className='form_second_layer'>
           <input
-            className='email__input'
+            className='form_email_input'
             type="email"
             id="email"
             name="email"
@@ -136,10 +136,10 @@ const ContactForm = () => {
             required
           />
         </div>
-        <div className='second__layer'>
+        <div className='form_second_layer'>
        
           <textarea
-            className='text__area'
+            className='form_text_area'
             id="message"
             name="message"
             value={formData.message}
@@ -166,7 +166,7 @@ const ContactForm = () => {
             </label>
 
       </div>
-        <button className={`submit__button ${isSubmitting ? 'loading' : ''}`} 
+        <button className={`submit_button ${isSubmitting ? 'loading' : ''}`} 
                   type="submit">
           {isSubmitting? 'please wait' : 'Send Message' }</button>
       </form>
@@ -179,6 +179,7 @@ const ContactForm = () => {
       )}
     </div>
   );
+
 };
 
 export default ContactForm;

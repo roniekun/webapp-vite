@@ -9,7 +9,6 @@ const RequestBtn = () => {
   const subject = 'Request Project';
 
   const handleClick = () => {
-
     const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
     window.location.href = mailtoUrl;
   };

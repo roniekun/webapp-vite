@@ -1,12 +1,10 @@
-// import React, { useState } from 'react';
 import './HomeContent.css';
 import { NavLink} from 'react-router-dom';
 import RequestBtn from './requestBtn/RequestBtn';
-// import ContactForm from './elements/ContactForm';
-// import PageModal from './PageModal';
 
-const HomeContent = () => {
-  // const [showContactForm, setShowContactForm] = useState(false);
+
+const HomeContent = ({isSmallScreen}) => {
+
   return (
 
     <div className='home_content_container'>
@@ -15,7 +13,7 @@ const HomeContent = () => {
           Unlock your visual story<br /> 
           </h1>
           <h3 className='sub_hero'>Transforming Visions into Digital Masterpiece</h3>
-          <RequestBtn/>
+            {isSmallScreen &&  <RequestBtn/>}
       </div>
 
       <div className='second_layer'>

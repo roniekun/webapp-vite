@@ -68,7 +68,8 @@ const Navbar = ({ showNavbar, isSmallScreen, isMediumScreen, setShowNavbar, isDe
           style={{
 
               flexDirection: 'row',
-              display: 'flex', 
+              display: 'flex',
+              justifyContent: 'center', 
               alignItems: 'center', 
               height: '20px',
               width: 'fit-content',

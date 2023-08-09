@@ -37,6 +37,7 @@
     padding-bottom: 5%;
     box-sizing: border-box;
     gap:5px;
+   
 }
 /* 
 .first_container::after{
@@ -276,6 +277,17 @@
 }
 
 @media (max-width:1024px) {
+
+
+.first_container{
+
+    padding:5%;
+
+}
+.hero{
+
+    font-size: 34px;
+}
         .sub_hero{
             margin-bottom: 10px;
         }

@@ -1,6 +1,7 @@
-import React from 'react'
+import { useState } from 'react'
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
+
 // import { ReactComponent as MyLogo } from './sitelogo.svg' ;
 
 const StyledDiv = styled.div`
@@ -20,7 +21,6 @@ const StyledDiv = styled.div`
     font-size: 18px;
     top:0;
     font-weight:500;
-
 }
 
     svg {
@@ -51,12 +51,24 @@ const StyledDiv = styled.div`
 
 `;
 
-const SiteLogo = ({transform, showNavbar, color}) => {
+const SiteLogo = ({transform, showNavbar , isSmallScreen, style}) => {
+
+  const [color, setColor] = useState('#6d6d6d');
+  const handleHover = () => {
+    setColor('black');}
+
+  const handleMouseLeave = () => {
+  
+    setColor(showNavbar ? '#6d6d6d' : color);
+    }
+    
   return (
     <StyledDiv>
     <NavLink to='/' 
     onClick={() => window.scrollTo({ top: 0 })}
-    style={{color: showNavbar ? '#6d6d6d' : color, transform: transform}} 
+    onMouseEnter={handleHover} // Set color to black on hover
+    onMouseLeave={handleMouseLeave}
+    style={{color: isSmallScreen ? '#fafafa' : color, transform: transform}} 
     className='site_logo_container'>
     <span>roniekun</span>
     </NavLink> 

@@ -6,18 +6,8 @@ import { ReactComponent as GithubIcon } from './svg/github.svg';
 import { ReactComponent as LinkedinIcon } from './svg/linkedin.svg';
 import { ThemeContext } from '../../../../context/ThemeContext';
 
-const SocialLinks = ({ 
-     fillColor,
-      displayNames,
-      displayHandles,
-      displayIcons,
-       flexDirection,
-       height,
-       width,
-       fontSize,
-       textTransform,
-       alignCenter
-      }) => {
+const SocialLinks = ({ displayNames, displayHandles, displayIcons, style }) => {
+
   const socialMediaLinks = [
     { name: 'LinkedIn', fill: '#0A66C2', icon:  <LinkedinIcon />, url: 'https://linkedin.com/in/roniebenitez', userhandle : '/in/roniebenitez' },
     { name: 'Github', fill: '#181717',icon:  <GithubIcon/>, url: 'https://www.github.com/roniekun',userhandle: '/roniekun' },
@@ -27,33 +17,34 @@ const SocialLinks = ({
     // Add more social media links as needed
     ];
 
+
   return (
+
     <ThemeContext.Consumer>
   {({ theme }) => (
-  <div className='social_links_container' style={{ flexDirection: flexDirection, alignItems: alignCenter, justifyContent: alignCenter }}>
 
- 
-      {socialMediaLinks.map((link) => (
-        
+  <div className='social_links_container' style={style}>
+     
+   {socialMediaLinks.map((link) => (
     <a
     id={`component-${theme}`}
     className='link__btn social__icon'
     key={link.name}
     href={link.url}
     target="_blank"
-    style={{fill: fillColor,color:fillColor}}
+    style={style}
     rel="noopener noreferrer"
   >
     <>
     <div 
     className='icon__container'
-    style={{ width: width, height: height}}
+    style={style}
     > 
 
       {displayIcons && link.icon}
     </div>
     <div className='userHandle__container'
-    style={{fontSize:fontSize, textTransform: textTransform}}>
+    style={style}>
       {displayHandles && link.userhandle}
       {displayNames && link.name}
     

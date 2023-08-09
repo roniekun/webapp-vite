@@ -106,7 +106,6 @@
     text-transform: capitalize;
     line-height: 24px;
     font-size: 18px;
-    max-width: 150px;
     font-weight: 500;
     width: auto;
     text-align: justify;
@@ -133,7 +132,7 @@
       justify-content: flex-start;
       align-items: center;
       height: 100vh;
-      width: 100vw;
+      width: 85vw;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
       overflow-y: hidden;
       z-index: 8888;
@@ -147,10 +146,10 @@
       opacity: 1;
       transition: all .5s;
       border-radius: 3px;
-      padding-inline: 10%;
+      padding-inline: 5%;
       padding-block:20%;
       font-family: sans-serif;
-      background-color: #1C1D20;
+      background-color: var(--primary-color);
    
     }
 
@@ -178,7 +177,8 @@
       width: 100%;
       justify-content: center;
       align-items: center;
-      padding: 10px;
+      padding-block: 20%;
+      row-gap: 20px;
    
   
 
@@ -188,41 +188,39 @@
       width: 100%;
       height: 50px;
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       position: relative;
       color:#fafafa;
+      font-size: 14px;
+      background-color: rgb(119, 114, 114);
+      font-family: 'Lato', sans-serif;
+      padding-inline:2px;
 
     }
-     /* .nav_row_title::before{
-      content: '';
-    position: absolute;
-    background-color: #E5E7EA;
-    top: 0;
-    height:2px;
-    width: 60%;
-    } */
+ 
     .nav_row_title::after{
       content: '';
 
     position: absolute;
     background-color: #E5E7EA;
     bottom: 0;
-    height: 2px;
-    width: 65%;
-    transform: translateY(-100%);
+    height: 1px;
+    width: 99%;
+    transform: translate(0, -100%);
    
     } 
   
     .link_wrapper {
+      display: flex;
+      align-items: flex-start;
       position: relative;
       height: fit-content;
-      width: fit-content;
+      width: 100%;
       margin:0;
       display: flex;
-  
-    
-  
+      
+
     }
     .link_wrapper:hover .navbar_link{
 
@@ -232,36 +230,24 @@
   
       display: flex;
       color: #fafafa;
-      font-size: 20px;
+      font-size: 34px;
       text-transform: capitalize;
       opacity: .8;
-      align-items: flex-start;
-      justify-content: flex-start;
       text-decoration: none;
-      text-align: left;
-      width: max-content;
-      font-weight: 100;
+      font-weight: 300;
+      max-width: 100%;
+      font-family: 'Lato', sans-serif;
    
-     
-      
-
     }
   
   .active_link{
     
       color: #fafafa;
-      opacity: 1;
-      transform: scale(1.025);
-      
-  
-     
-      
-    
-    }
-    .hide .navbar_link{
 
-      color:#fafafa;
     }
+
+
+  
   
   
 

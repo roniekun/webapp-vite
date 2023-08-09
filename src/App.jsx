@@ -30,12 +30,15 @@ const App = () => {
 
 
   const handleResize = useCallback(() => {
+
     const screenWidth = window.innerWidth;
+
     setIsDesktop(screenWidth > 600);
     setShowNavbar(screenWidth > 600);
     setIsSmallScreen(screenWidth <= 600);
     setIsMediumScreen(screenWidth <= 1024 && screenWidth > 600)
-  }, [isDesktop]);
+
+  }, [isDesktop, isSmallScreen, showNavbar, isMediumScreen]);
 
     const handleScroll = useCallback(() => {
     const currentScroll = window.scrollY;

@@ -1,11 +1,11 @@
 import './Home.css';
 import Footer from '../Footer';
-import HomeContent from './sections/HomeContent';
-function Home({isSmallScreen}) {
+import HomeContent from './content/HomeContent';
+function Home({isSmallScreen,isMediumScreen}) {
   
   return (
   <div className='home__container'>
-    <HomeContent isSmallScreen={isSmallScreen}/>
+    <HomeContent isSmallScreen={isSmallScreen} isMediumScreen={isMediumScreen}/>
     <Footer isSmallScreen={isSmallScreen}/>
    </div>
  

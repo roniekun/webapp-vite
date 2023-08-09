@@ -1,9 +1,7 @@
 import React from 'react';
 import './Portfolio.css';
-import PortfolioContent from './sections/PortfolioContent';
+import PortfolioContent from './content/PortfolioContent';
 import Footer from '../Footer';
-// import PhotoCarousel from './sections/elements/PhotoCarousel';
-
 
 function Portfolio({showNavbar, isSmallScreen}) {
   return (

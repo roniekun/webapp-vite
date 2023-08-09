@@ -74,7 +74,7 @@
 
 }
 
-.second_layer{
+.home_second_layer{
 
  
     display: flex;
@@ -274,6 +274,32 @@
    
 
 }
+
+@media (max-width:1024px) {
+        .sub_hero{
+            margin-bottom: 10px;
+        }
+        .home_second_layer{
+            flex-direction: column;
+            height: fit-content;
+            margin-top: 0;
+           }
+           .second_container, .third_container, .forth__container{
+    
+            font-size: 50px;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-block:5%;
+            padding-top: 50%;
+            width: 95%;
+          
+        
+        }
+
+
+}
 @media (max-width: 600px) {
 
 
@@ -353,7 +379,7 @@
     font-size: 16px;
     
 }
-.second_layer{
+.home_second_layer{
  flex-direction: column;
  height: fit-content;
  margin-top: 0;

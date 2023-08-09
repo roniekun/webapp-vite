@@ -81,14 +81,15 @@
 
   .links_container{
     display: flex;
-    position: relative;
+    position: static;
     justify-content: center;
     align-items: center;
     height: 60px;
     overflow: hidden;
-    width: 50vw;
+    width: 65vw;
     align-self: center;
 
+   
 
   
     
@@ -121,9 +122,7 @@
  
   
   }
-
-
-
+  
 
   @media (max-width: 600px) {
   

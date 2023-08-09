@@ -1,9 +1,9 @@
 import './HomeContent.css';
 import { NavLink} from 'react-router-dom';
-import RequestBtn from './requestBtn/RequestBtn';
+import RequestBtn from '../assets/buttons/RequestBtn';
 
 
-const HomeContent = ({isSmallScreen}) => {
+const HomeContent = ({isSmallScreen,isMediumScreen}) => {
 
   return (
 
@@ -13,10 +13,11 @@ const HomeContent = ({isSmallScreen}) => {
           Unlock your visual story<br /> 
           </h1>
           <h3 className='sub_hero'>Transforming Visions into Digital Masterpiece</h3>
+            {isMediumScreen &&  <RequestBtn/>}
             {isSmallScreen &&  <RequestBtn/>}
       </div>
 
-      <div className='second_layer'>
+      <div className='home_second_layer'>
 
       <NavLink to="/portfolio"  onClick={() => window.scrollTo({ top: 0 })} className='second_container'>
         <h4 className='ptag_home_title'>Web Development</h4>

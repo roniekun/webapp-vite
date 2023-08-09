@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './ContactForm.css';
-import ContactModal from './ContactModal';
+import ContactModal from '../contactModal/ContactModal';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
 import { NavLink, useLocation} from 'react-router-dom';
@@ -96,7 +96,6 @@ const ContactForm = () => {
 
 
       <form className='form' onSubmit={handleSubmit}>
-
 
         <div className='form_first_layer'>
           

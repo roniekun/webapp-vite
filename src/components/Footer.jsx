@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { ThemeContext } from '../context/ThemeContext';
 import './Footer.css'; 
-import SocialLinks from './icons/SocialLinks';
-import UsefulLinks from './main/sections/elements/UsefulLinks';
-import RequestBtn from './main/sections/requestBtn/RequestBtn';
-
+import SocialLinks from './pages/assets/icons/SocialLinks';
+import UsefulLinks from './pages/assets/links/UsefulLinks';
+import RequestBtn from './pages/assets/buttons/RequestBtn';
 
 function Footer({ showNavbar, isSmallScreen}) {
   const [showFooter, setShowFooter] = useState(window.innerWidth > 768);
@@ -35,7 +34,7 @@ function Footer({ showNavbar, isSmallScreen}) {
        
        <>
 
-       { isSmallScreen &&
+       {/* { isSmallScreen &&
        <div style={{ alignSelf: 'center'}}>
         <h1 style={{
               color: 'white',
@@ -43,7 +42,7 @@ function Footer({ showNavbar, isSmallScreen}) {
               marginBottom: "24px", 
               fontSize: '16px'}}>
               Follow <br/></h1>
-        </div> }
+        </div> } */}
 
     <> 
       <SocialLinks fillColor={"white"} 

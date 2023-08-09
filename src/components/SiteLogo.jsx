@@ -10,7 +10,6 @@ const StyledDiv = styled.div`
     display:flex;
     justify-content:center;
     align-items:center;
-    zIndex:9999;
     cursor:pointer;
     font-family: 'Clash Display', sans-serif;
     letter-spacing: 1px;

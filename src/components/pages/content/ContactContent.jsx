@@ -1,10 +1,10 @@
 import React from 'react'
-import ContactForm from './elements/ContactForm'
+import ContactForm from '../assets/contactForm/ContactForm'
 import  './ContactContent.css'
-import SocialLinks from '../../icons/SocialLinks'
+import SocialLinks from '../assets/icons/SocialLinks'
 
 
-const ContactContent = () => {
+const ContactContent = ({}) => {
   6
   const email = 'roniebenitez01@gmail.com';
   const subject = 'Request Project';

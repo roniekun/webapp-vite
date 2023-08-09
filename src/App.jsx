@@ -3,15 +3,15 @@ import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
 // import AutoscrollButton from './components/buttons/AutoscrollButton';
-import Home from './components/main/Home';
-import Contact from './components/main/Contact';
-import About from './components/main/About';
-import Portfolio from './components/main/Portfolio';
-import Gallery from './components/main/Gallery';
+import Home from './components/pages/Home';
+import Contact from './components/pages/Contact';
+import About from './components/pages/About';
+import Portfolio from './components/pages/Portfolio';
+import Gallery from './components/pages/Gallery';
 // import Blog from './components/main/Blog';
-import NotFound from './components/main/NotFound';
-import Policy from './components/main/Policy';
-import Menu from './components/icons/menu/Menu';
+import NotFound from './components/pages/NotFound';
+import Policy from './components/pages/Policy';
+import Menu from './components/pages/assets/icons/menu/Menu';
 import './App.css';
 import { ThemeProvider, ThemeContext } from './context/ThemeContext';
 import PageModal from './assets/PageModal'
@@ -23,6 +23,7 @@ const App = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [isScroll, setIsScroll] = useState();
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 600);
+  const [isMediumScreen, setIsMediumScreen] = useState (window.innerWidth <= 1024 && window.innerWidth > 600)
   const [isDesktop, setIsDesktop] = useState(window.innerWidth > 600);
   const [showNavbar, setShowNavbar] = useState(window.innerWidth > 600 && window.scrollY === 0);
 
@@ -33,7 +34,7 @@ const App = () => {
     setIsDesktop(screenWidth > 600);
     setShowNavbar(screenWidth > 600);
     setIsSmallScreen(screenWidth <= 600);
-
+    setIsMediumScreen(screenWidth <= 1024 && screenWidth > 600)
   }, [isDesktop]);
 
     const handleScroll = useCallback(() => {
@@ -100,6 +101,7 @@ const App = () => {
                 <Navbar
                   showNavbar={showNavbar}
                   isDesktop={isDesktop}
+                  isMediumScreen={isMediumScreen}
                   isSmallScreen={isSmallScreen}
                   setShowNavbar={setShowNavbar}
                   isScroll={isScroll}
@@ -107,7 +109,7 @@ const App = () => {
   
 
                 <Routes>
-                  <Route path='/' element={<Home isSmallScreen={isSmallScreen} showNavbar={showNavbar} />} />
+                  <Route path='/' element={<Home isSmallScreen={isSmallScreen} isMediumScreen={isMediumScreen} showNavbar={showNavbar} />} />
                   <Route path='/about' element={<About isSmallScreen={isSmallScreen} showNavbar={showNavbar} />} />
                   <Route path='/portfolio' element={<Portfolio isSmallScreen={isSmallScreen}  showNavbar={showNavbar} />} />
                   {/* <Route path='/blog' element={<Blog isSmallScreen={isSmallScreen}  showNavbar={showNavbar} />} /> */}

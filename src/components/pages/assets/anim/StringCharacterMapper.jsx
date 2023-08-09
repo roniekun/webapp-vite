@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './StringCharacterMapper.css';
-import { ThemeContext } from '../../../context/ThemeContext';
+import { ThemeContext } from '../../../../context/ThemeContext';
 
 function StringCharacterMapper({colorTheme,customString,onClick}) {
 

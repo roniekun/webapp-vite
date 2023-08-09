@@ -1,9 +1,10 @@
 import React from 'react';
 import './Menu.css';
 import { Twirl as Hamburger } from 'hamburger-react';
-import { ThemeContext } from '../../../context/ThemeContext';
+import { ThemeContext } from '../../../../../context/ThemeContext';
 
 const Menu = ({ position, showNavbar, isSmallScreen, setShowNavbar }) => {
+  
   const handleClick = () => {
     setShowNavbar(!showNavbar);
     console.log("menu is clicked");

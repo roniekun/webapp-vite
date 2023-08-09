@@ -1,12 +1,12 @@
 import { NavLink, useLocation } from 'react-router-dom';
 import './Navbar.css';
 import { ThemeContext } from '../context/ThemeContext';
-import SocialLinks from './icons/SocialLinks';
+import SocialLinks from './pages/assets/icons/SocialLinks';
 import SiteLogo from './SiteLogo';
-import RequestBtn from './main/sections/requestBtn/RequestBtn';
+import RequestBtn from './pages/assets/buttons/RequestBtn';
 
 
-const Navbar = ({ showNavbar, isSmallScreen, setShowNavbar, isDesktop, isScroll }) => {
+const Navbar = ({ showNavbar, isSmallScreen, isMediumScreen, setShowNavbar, isDesktop, isScroll }) => {
   const location = useLocation();
 
 
@@ -59,8 +59,7 @@ const Navbar = ({ showNavbar, isSmallScreen, setShowNavbar, isDesktop, isScroll 
             </div></>
             </>
             {/* {isDesktop && <Search showNavbar={showNavbar } color={ 'white'}/>} */}
-            {isDesktop && <RequestBtn/>}
-            
+            {!isMediumScreen && !isSmallScreen && <RequestBtn/>}
             {isSmallScreen &&
 
             <>

@@ -4,12 +4,7 @@ import { ReactComponent as FacebookIcon } from './svg/facebook.svg'; // https://
 import { ReactComponent as InstagramIcon } from './svg/instagram.svg';
 import { ReactComponent as GithubIcon } from './svg/github.svg';
 import { ReactComponent as LinkedinIcon } from './svg/linkedin.svg';
-import { ThemeContext } from '../../context/ThemeContext';
-
-
-
-
-
+import { ThemeContext } from '../../../../context/ThemeContext';
 
 const SocialLinks = ({ 
      fillColor,

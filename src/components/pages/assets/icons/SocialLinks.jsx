@@ -43,8 +43,9 @@ const SocialLinks = ({ displayNames, displayHandles, displayIcons, style }) => {
 
       {displayIcons && link.icon}
     </div>
-    <div className='userHandle__container'
+    <div className='userHandle_container'
     style={style}>
+    
       {displayHandles && link.userhandle}
       {displayNames && link.name}
     

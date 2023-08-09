@@ -9,7 +9,7 @@
     border:none;
     cursor: pointer;
     display: flex;
-    /* font-family: 'Rajdhani', sans-serif; */
+    font-family: 'Rajdhani', sans-serif;
     opacity: 0.7;
     list-style: none;
     text-decoration: none;
@@ -24,15 +24,18 @@
   border-radius: 50%;
   height: fit-content;
   width: fit-content; 
+
 }
-.userHandle__container{
+.userHandle_container{
   margin: 0px;
   font-size: 14px;
   line-height: 20px;
   font-family: sans-serif;
- 
+  
+
 
 }
+
 
 .social__icon svg {
     width: 20px;
@@ -52,10 +55,11 @@
 
 .social_links_container{
     position: relative;
-    display: flex;
-    width: 100%;
+    width: 80%;
     height: fit-content;
     padding: 10px;
+   
+   
 
    
 }
@@ -70,6 +74,19 @@
   width: 20px;
   height: 20px;
 
+
+}
+.userHandle_container{
+
+  padding: 5%;
+  fill: #6d6d6d;
+  color: #6d6d6d;
+
+
+}
+.userHandle_container:hover{
+
+  color: var(--gold);
 
 }
 }

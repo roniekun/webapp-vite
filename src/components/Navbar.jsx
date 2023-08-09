@@ -34,7 +34,7 @@ const Navbar = ({ showNavbar, isSmallScreen, isMediumScreen, setShowNavbar, isDe
           className={`navbar_container ${isScroll ? 'bg-color' : ''} ${showNavbar ? '' : 'hide'}`}
           id={`component-${themeContext.theme}`}>
             <>
-          { isSmallScreen && <div className='nav_row_title'> <h4 >Navigations</h4> </div>} 
+          { isSmallScreen && <div className='nav_row_title'> <h4 >Sections</h4> </div>} 
             
             <>
            {isDesktop && <SiteLogo showNavbar={showNavbar} style={{ color : '#3D3D3d'}} />}
@@ -63,7 +63,7 @@ const Navbar = ({ showNavbar, isSmallScreen, isMediumScreen, setShowNavbar, isDe
             {isSmallScreen &&
 
             <>
-          <div className='nav_row_title'><h4 className='nav_row_title'> Social Accounts</h4></div>
+          <div className='nav_row_title'><h4>Socials</h4></div>
           <SocialLinks 
           style={{
 
@@ -72,12 +72,12 @@ const Navbar = ({ showNavbar, isSmallScreen, isMediumScreen, setShowNavbar, isDe
               justifyContent: 'center', 
               alignItems: 'center', 
               height: '20px',
-              width: 'fit-content',
-              fontSize: '11px',
+              fontSize: '12px',
               textTransform: 'capitalize',
-              fill: '#fafafa',
-              color: '#fafafa',
-              paddingTop:'10%'
+              width: 'fit-content',
+              paddingBlock:'10%',
+              fontFamily: 'Lato, sans serif',
+              fontWeight: '500'
            
           
             

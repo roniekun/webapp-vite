@@ -25,34 +25,21 @@ function Footer({ showNavbar, isSmallScreen}) {
 
       <>
        <h1 className='footer_cta' >Your website, your brand's canvas – 
-       let's paint your online masterpiece today!</h1> <br />
+       let's paint your online masterpiece today!</h1>
            <RequestBtn/>
       </>
-     
-      
           <UsefulLinks/>
        
-       <>
-
-       {/* { isSmallScreen &&
-       <div style={{ alignSelf: 'center'}}>
-        <h1 style={{
-              color: 'white',
-              letterSpacing: '2px',
-              marginBottom: "24px", 
-              fontSize: '16px'}}>
-              Follow <br/></h1>
-        </div> } */}
 
     <> 
-      <SocialLinks fillColor={"white"} 
+      <SocialLinks  
       isSmallScreen={isSmallScreen} 
-      flexDirection={"row"}/>
+      displayIcons={true}
+      style={{color: 'white', fill: 'white'}}/>
 
       <p id={`component-${theme}`}  className='footer__text'>© 2023. All rights reserved. This site is a work in progress :)</p>  
     </>
-       
-       </>
+
 
 
 </div>

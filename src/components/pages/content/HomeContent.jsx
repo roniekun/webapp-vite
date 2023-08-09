@@ -1,6 +1,7 @@
 import './HomeContent.css';
 import { NavLink} from 'react-router-dom';
 import RequestBtn from '../assets/buttons/RequestBtn';
+import SocialLinks from '../assets/icons/SocialLinks';
 
 
 const HomeContent = ({isSmallScreen,isMediumScreen}) => {
@@ -9,12 +10,26 @@ const HomeContent = ({isSmallScreen,isMediumScreen}) => {
 
     <div className='home_content_container'>
       <div className='first_container'>
+        <div className='hero_container'>
         <h1 className='hero'> 
           Unlock your visual story<br /> 
           </h1>
           <h3 className='sub_hero'>Transforming Visions into Digital Masterpiece</h3>
             {isMediumScreen &&  <RequestBtn/>}
             {isSmallScreen &&  <RequestBtn/>}
+        </div>
+        {!isSmallScreen && 
+        <div className='socials'>
+        <SocialLinks displayIcons={true} 
+                      homeStyle={{color:'#6d6d6d',
+                      border:'1px #6d6d6d solid',
+                      borderRadius: '50%',
+                      display: 'flex',
+                      justifyContent:'center',
+                      alignItems:'center' }}
+                      />
+        </div>}
+      
       </div>
 
       <div className='home_second_layer'>

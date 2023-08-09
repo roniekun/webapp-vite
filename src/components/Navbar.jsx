@@ -64,9 +64,10 @@ const Navbar = ({ showNavbar, isSmallScreen, isMediumScreen, setShowNavbar, isDe
 
             <>
           <div className='nav_row_title'><h4>Socials</h4></div>
+          <br />
+          <br />
           <SocialLinks 
           style={{
-
               flexDirection: 'row',
               display: 'flex',
               justifyContent: 'center', 
@@ -75,11 +76,8 @@ const Navbar = ({ showNavbar, isSmallScreen, isMediumScreen, setShowNavbar, isDe
               fontSize: '12px',
               textTransform: 'capitalize',
               width: 'fit-content',
-              paddingBlock:'10%',
               fontFamily: 'Lato, sans serif',
               fontWeight: '500'
-           
-          
             
           }}
               displayNames={true}

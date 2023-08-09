@@ -11,10 +11,6 @@
     width:90vw;
     column-gap:20px;
    
-  
-  
-  
-    
  
 }
 
@@ -75,7 +71,7 @@
     width: 100%;
     padding: 5%;
     margin: 10%;
-    border-radius: 10px;
+    border-radius: 3px;
  
  
 }
@@ -86,7 +82,7 @@
     padding:5%;
     margin: 10%;
     height: 300px;
-    border-radius: 10px;
+    border-radius: 3px;
 
 }
 .digital_spaces h4{

@@ -42,7 +42,20 @@ const ContactContent = ({}) => {
           </div>
         <div className='digital_spaces'>
         <h4>My Digital Spaces</h4> <br />
-         <SocialLinks style= {{flexDirection: 'column', fontSize: '18px'}} displayNames={true} displayIcons={false}/>
+         <SocialLinks contactContainer= {{flexDirection: 'column', 
+                                          fontSize: '18px',
+                                          justifyContent:'flex-start',
+                                          alignItems: 'flex-start',
+                                          height: 'fit-content',
+                                          width: '100%'}} 
+                    contactIconContainer={{margin: '0',
+                                          padding: '0',}}
+                    contactSocialLink={{color: 'black',
+                                        padding:'0',
+                                        lineHeight: '28px'}}
+
+                    displayNames={true} 
+                    displayIcons={false}/>
 
         </div>
 

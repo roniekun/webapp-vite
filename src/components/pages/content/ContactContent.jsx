@@ -42,7 +42,7 @@ const ContactContent = ({}) => {
           </div>
         <div className='digital_spaces'>
         <h4>My Digital Spaces</h4> <br />
-         <SocialLinks flexDirection={'column'} fontSize={'18px'} displayNames={true} displayIcons={false}/>
+         <SocialLinks style= {{flexDirection: 'column', fontSize: '18px'}} displayNames={true} displayIcons={false}/>
 
         </div>
 

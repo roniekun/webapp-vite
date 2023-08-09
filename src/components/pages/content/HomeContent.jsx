@@ -36,7 +36,7 @@ const HomeContent = ({isSmallScreen,isMediumScreen}) => {
       </NavLink>
       </div>
 
-      <div className='forth__container'>
+      <div className='home_forth_container'>
         <p className='ptag_home'>
           <span>Stay awhile </span><br /> immerse yourself in the fusion of technology and artistic expression.<br />
           Whether you're intrigued by coding wizardry or drawn to the beauty of visual storytelling,<br />

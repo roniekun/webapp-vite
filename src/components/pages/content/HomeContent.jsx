@@ -1,7 +1,7 @@
 import './HomeContent.css';
 import { NavLink} from 'react-router-dom';
 import RequestBtn from '../assets/buttons/RequestBtn';
-import SocialLinks from '../assets/icons/SocialLinks';
+
 
 
 const HomeContent = ({isSmallScreen,isMediumScreen}) => {
@@ -18,17 +18,7 @@ const HomeContent = ({isSmallScreen,isMediumScreen}) => {
             {isMediumScreen &&  <RequestBtn/>}
             {isSmallScreen &&  <RequestBtn/>}
         </div>
-        {!isSmallScreen && 
-        <div className='socials'>
-        <SocialLinks displayIcons={true} 
-                      homeStyle={{color:'#6d6d6d',
-                      border:'1px #6d6d6d solid',
-                      borderRadius: '50%',
-                      display: 'flex',
-                      justifyContent:'center',
-                      alignItems:'center' }}
-                      />
-        </div>}
+
       
       </div>
 

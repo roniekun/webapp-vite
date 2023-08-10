@@ -58,9 +58,17 @@ const Navbar = ({ showNavbar, isSmallScreen, isMediumScreen, setShowNavbar, isDe
             </div></>
             </>
             {/* {isDesktop && <Search showNavbar={showNavbar } color={ 'white'}/>} */}
-            {!isMediumScreen && !isSmallScreen && <RequestBtn/>}
+            {!isMediumScreen && !isSmallScreen && 
+            <RequestBtn navbarButton={{border:'none',
+                                       background: 'transparent',
+                                       color:'black',
+                                       fill: 'black',
+                                       boxShadow: 'none'}}
+                        navbarSvg={{border: 'black solid 1px'}}/>
+                                       }
+                       
+            
             {isSmallScreen &&
-
             <>
           <div className='nav_row_title'><h4>Connect</h4></div>
           <br />

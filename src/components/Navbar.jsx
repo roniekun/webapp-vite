@@ -12,15 +12,9 @@ import { delay } from 'framer-motion';
 const Navbar = ({ showNavbar, isSmallScreen, isMediumScreen, setShowNavbar, isDesktop, isScroll }) => {
   const location = useLocation();
   const navbarContainerRef = useRef(null);
-  const navbarlinksRef = useRef(null);
+  
 
-  const links = [
-    { to: '/', text: 'home' },
-    { to: '/about', text: 'about' },
-    { to: '/portfolio', text: 'work' },
-    { to: '/contact', text: 'contact' },
-  ];
-
+  
   useEffect(() => {
     if (showNavbar) {
       gsap.to(navbarContainerRef.current, { y: '0%', duration: 0.5, opacity: 1, ease: 'power2.out' });
@@ -29,15 +23,34 @@ const Navbar = ({ showNavbar, isSmallScreen, isMediumScreen, setShowNavbar, isDe
     }
   }, [showNavbar]);
 
-  useEffect(() => {
-    if (showNavbar) {
+  const links = [
+    { to: '/', text: 'home' },
+    { to: '/about', text: 'about' },
+    { to: '/portfolio', text: 'work' },
+    { to: '/contact', text: 'contact' },
+  ];
+
+ const navbarlinkRefs = links.map(() => useRef(null));
+
+ useEffect(() => {
+  if (showNavbar) {
+    navbarlinkRefs.forEach((navbarlinkRef, index) => {
       gsap.fromTo(
-        navbarlinksRef.current,
-        { y: '70px', opacity: 0 },
-        { y: '0', opacity: 1, duration: 0.5, }
+        navbarlinkRef.current,
+        { y: '70%', opacity: 0, skewY: 3},
+        {
+          y: '0',
+          opacity: 1,
+          duration: 0.5,
+          delay: index * 0.1,
+          skewY:0
+          
+        }
       );
-    }
-  }, [showNavbar]);
+    });
+  }
+}, [showNavbar, navbarlinkRefs]);
+
 
   const handleLinkClick = () => {
 
@@ -59,15 +72,17 @@ const Navbar = ({ showNavbar, isSmallScreen, isMediumScreen, setShowNavbar, isDe
             <>
            {isDesktop && <SiteLogo showNavbar={showNavbar} 
                                     navbarContainer={{ color : '#3D3D3d', width: '15vw'}} />}
-            <div className="links_container"  ref={navbarlinksRef}>
+            <div className="links_container">
               
 
-              {links.map((link) => (
+              {links.map((link, index) => (
                 <div
                   className="link_wrapper"
-                  key={link.to}  
+                  key={link.to}
+                  
                 >
                   <NavLink 
+                     ref={navbarlinkRefs[index]}  
                     onClick={() => 
                     handleLinkClick(location.pathname === link.to)}
                     className={`navbar_link ${location.pathname === link.to ? 'active_link' : ''}`}

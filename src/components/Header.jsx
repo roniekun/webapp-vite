@@ -9,7 +9,12 @@ function Header({ showNavbar, isSmallScreen, isDesktop, setShowNavbar }) {
     <ThemeContext.Consumer>
       {({ theme }) => (
           <div id={`component-${theme}`}  className='header__container'>
-          {isSmallScreen && <SiteLogo isSmallScreen={isSmallScreen} color={'#fafafa'} transform={'translate(10%)' }/> }
+          {isSmallScreen && <SiteLogo 
+          isSmallScreen={isSmallScreen} 
+          headerContainer={{color: '#fafafa',
+          transform:'translateX(10%)'}}/> 
+          
+          }
             </div>
 
       )}

@@ -20,23 +20,27 @@
     display: grid;
     font-size: 50px;
     height: 800px;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
     grid-template-areas: 'one' 
                         'two'
                         'three'
-                        'four';
+                        'four'
+                        'five';
     position: relative;
     width: 100vw;
     place-items: center;
     box-sizing: border-box;
+    
   
 }
 .hero_container{
     display: flex;
     flex-direction: column;
-    grid-area: two;
+    grid-area: three;
     justify-content: center;
     align-items: center;
+    padding: 5%;
+
 }
 
 .hero {
@@ -46,9 +50,9 @@
     line-height: 60px;
     color: var(--gold);
     z-index: 1;
-    margin-top: 10%;
     font-family: 'Clash Display';
     text-align: center;
+
 }
 
 .sub_hero {

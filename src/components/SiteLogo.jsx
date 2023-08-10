@@ -51,7 +51,7 @@ const StyledDiv = styled.div`
 
 `;
 
-const SiteLogo = ({transform, showNavbar , isSmallScreen, style}) => {
+const SiteLogo = ({headerContainer, showNavbar , isSmallScreen, navbarContainer}) => {
 
   const [color, setColor] = useState('#6d6d6d');
   const handleHover = () => {
@@ -68,7 +68,7 @@ const SiteLogo = ({transform, showNavbar , isSmallScreen, style}) => {
     onClick={() => window.scrollTo({ top: 0 })}
     onMouseEnter={handleHover} // Set color to black on hover
     onMouseLeave={handleMouseLeave}
-    style={{color: isSmallScreen ? '#fafafa' : color, transform: transform}} 
+    style={{color: isSmallScreen ? '#fafafa' : color,...navbarContainer,...headerContainer}} 
     className='site_logo_container'>
     <span>roniekun</span>
     </NavLink> 

@@ -3,7 +3,7 @@ import { ReactComponent as TrendingFlat } from './svg/trending_flat.svg';
 import { ReactComponent as Mail } from './svg/mail.svg';
 import './RequestBtn.css';
 
-const RequestBtn = ({navbarButton, navbarSvg}) => {
+const RequestBtn = ({navbarButton, navbarSvg, isDesktop}) => {
 
   const email = 'roniebenitez01@gmail.com';
   const subject = 'Request Project';
@@ -19,10 +19,11 @@ const RequestBtn = ({navbarButton, navbarSvg}) => {
             data-copy-text='roniebenitez01@gmail.com'
              onClick={handleClick}>
           Request Project 
+          {!isDesktop &&
           <div className='svg_container'
           style={navbarSvg}> 
           <Mail className='mail_svg'/>
-          <TrendingFlat className='trendingflat_svg'/></div>
+          <TrendingFlat className='trendingflat_svg'/></div>}
         </b>
     </div>
   )

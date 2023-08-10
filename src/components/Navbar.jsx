@@ -37,7 +37,8 @@ const Navbar = ({ showNavbar, isSmallScreen, isMediumScreen, setShowNavbar, isDe
           { isSmallScreen && <div className='nav_row_title'> <h4 >Sections</h4> </div>} 
             
             <>
-           {isDesktop && <SiteLogo showNavbar={showNavbar} style={{ color : '#3D3D3d'}} />}
+           {isDesktop && <SiteLogo showNavbar={showNavbar} 
+                                    navbarContainer={{ color : '#3D3D3d', width: '15vw'}} />}
             <div className="links_container">
 
               {links.map((link) => (
@@ -59,11 +60,13 @@ const Navbar = ({ showNavbar, isSmallScreen, isMediumScreen, setShowNavbar, isDe
             </>
             {/* {isDesktop && <Search showNavbar={showNavbar } color={ 'white'}/>} */}
             {!isMediumScreen && !isSmallScreen && 
-            <RequestBtn navbarButton={{border:'none',
+            <RequestBtn isDesktop={isDesktop}
+                       navbarButton={{border:'none',
                                        background: 'transparent',
                                        color:'black',
                                        fill: 'black',
-                                       boxShadow: 'none'}}
+                                       boxShadow: 'none', 
+                                      width: '15vw'}}
                         navbarSvg={{border: 'black solid 1px'}}/>
                                        }
                        

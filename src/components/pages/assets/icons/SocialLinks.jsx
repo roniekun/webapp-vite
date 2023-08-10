@@ -9,8 +9,7 @@ import { ThemeContext } from '../../../../context/ThemeContext';
 const SocialLinks = ({ displayNames, 
                       displayHandles, 
                       displayIcons, 
-                      style,
-                      homeStyle, 
+                      navSocialLink,
                       contactContainer,
                       contactSocialLink,
                       contactIconContainer,
@@ -31,7 +30,7 @@ const SocialLinks = ({ displayNames,
   return (
     <ThemeContext.Consumer>
       {({ theme }) => (
-        <div className='social_links_container' style={{...style,...contactContainer,...footerContainer}}>
+        <div className='social_links_container' style={{...contactContainer,...footerContainer}}>
           {socialMediaLinks.map((link) => (
             <div         
               style={{ ...contactIconContainer,...footerIconContainer}} 
@@ -44,7 +43,7 @@ const SocialLinks = ({ displayNames,
                   target="_blank"
                   style={{
                     ...footerSocialLink,
-                    ...homeStyle,
+                    ...navSocialLink,
                     ...contactSocialLink,
                     
                   }}

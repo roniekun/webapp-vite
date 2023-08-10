@@ -66,8 +66,7 @@ const Navbar = ({ showNavbar, isSmallScreen, isMediumScreen, setShowNavbar, isDe
           <br />
           <br />
           <SocialLinks 
-          style={{
-              flexDirection: 'row',
+          navSocialLink={{
               display: 'flex',
               justifyContent: 'center', 
               alignItems: 'center', 

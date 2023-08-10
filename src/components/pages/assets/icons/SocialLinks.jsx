@@ -14,7 +14,9 @@ const SocialLinks = ({ displayNames,
                       contactContainer,
                       contactSocialLink,
                       contactIconContainer,
-                      footerIconContainer }) => {
+                      footerIconContainer,
+                      footerContainer,
+                      footerSocialLink }) => {
 
   const [hoveredLink, setHoveredLink] = useState(null); // Step 1: Add state
 
@@ -29,25 +31,25 @@ const SocialLinks = ({ displayNames,
   return (
     <ThemeContext.Consumer>
       {({ theme }) => (
-        <div className='social_links_container' style={{...style,...contactContainer}}>
+        <div className='social_links_container' style={{...style,...contactContainer,...footerContainer}}>
           {socialMediaLinks.map((link) => (
             <div         
               style={{ ...contactIconContainer,...footerIconContainer}} 
               key={link.name}
-              className='icon_container'
-              onMouseEnter={() => setHoveredLink(link.name)} 
-              onMouseLeave={() => setHoveredLink(null)}>    
+              className='icon_container'>    
                 <a
                   id={`component-${theme}`}
                   href={link.url}
                   key={link.name}
                   target="_blank"
                   style={{
-                    ...style,
+                    ...footerSocialLink,
                     ...homeStyle,
                     ...contactSocialLink,
                     
                   }}
+                  // onMouseEnter={() => setHoveredLink(link.name)} 
+                  // onMouseLeave={() => setHoveredLink(null)}
                   className='social_link'
                   rel="noopener noreferrer">
                    {displayNames &&link.name}

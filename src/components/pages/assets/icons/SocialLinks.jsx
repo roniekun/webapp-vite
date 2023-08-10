@@ -13,7 +13,8 @@ const SocialLinks = ({ displayNames,
                       homeStyle, 
                       contactContainer,
                       contactSocialLink,
-                      contactIconContainer }) => {
+                      contactIconContainer,
+                      footerIconContainer }) => {
 
   const [hoveredLink, setHoveredLink] = useState(null); // Step 1: Add state
 
@@ -31,15 +32,11 @@ const SocialLinks = ({ displayNames,
         <div className='social_links_container' style={{...style,...contactContainer}}>
           {socialMediaLinks.map((link) => (
             <div         
-              style={{...homeStyle, ...contactIconContainer, 
-                    fill: hoveredLink === link.name ? link.fill : ''  }} 
+              style={{ ...contactIconContainer,...footerIconContainer}} 
               key={link.name}
               className='icon_container'
               onMouseEnter={() => setHoveredLink(link.name)} 
               onMouseLeave={() => setHoveredLink(null)}>    
-              {displayIcons && link.icon}
-              {displayHandles && link.userhandle}
-              {displayNames && (
                 <a
                   id={`component-${theme}`}
                   href={link.url}
@@ -49,13 +46,15 @@ const SocialLinks = ({ displayNames,
                     ...style,
                     ...homeStyle,
                     ...contactSocialLink,
-                   
+                    
                   }}
                   className='social_link'
                   rel="noopener noreferrer">
-                  {link.name}
+                   {displayNames &&link.name}
+                  {displayIcons && link.icon}
+                  {displayHandles && link.userhandle}
                 </a>
-              )}
+
             </div>
           ))}
         </div>

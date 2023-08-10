@@ -51,7 +51,6 @@ const Navbar = ({ showNavbar, isSmallScreen, isMediumScreen, setShowNavbar, isDe
                     className={`navbar_link ${location.pathname === link.to ? 'active_link' : ''}`}
                     to={link.to}
                   >
-                    {/* {isSmallScreen && isActive && location.pathname === link.to && <ActiveIcon />} */}
                     {link.text}
                   </NavLink>
                 </div>
@@ -63,7 +62,7 @@ const Navbar = ({ showNavbar, isSmallScreen, isMediumScreen, setShowNavbar, isDe
             {isSmallScreen &&
 
             <>
-          <div className='nav_row_title'><h4>Socials</h4></div>
+          <div className='nav_row_title'><h4>Connect</h4></div>
           <br />
           <br />
           <SocialLinks 
@@ -76,18 +75,20 @@ const Navbar = ({ showNavbar, isSmallScreen, isMediumScreen, setShowNavbar, isDe
               fontSize: '12px',
               textTransform: 'capitalize',
               width: 'fit-content',
-              fontFamily: 'Lato, sans serif',
+              fontFamily: 'Clash Display, sans serif',
               fontWeight: '500'
             
           }}
               displayNames={true}
-              showNavbar={showNavbar} 
-          />
-            
+              showNavbar={showNavbar}/>
+
             </>
            }
-            
-           {/* {isSmallScreen &&   <ToggleTheme isSmallScreen={isSmallScreen} showNavbar={showNavbar} fontColor="white" position="relative" />} */}
+           <br />
+           <br />
+            {isSmallScreen && (<div className='nav_email'>  <h4>Email </h4>
+            <h3>roniebenitez01@gmail.com</h3></div>
+           ) }
             
           </nav>
         )}

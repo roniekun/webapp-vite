@@ -35,7 +35,9 @@ function Footer({ showNavbar, isSmallScreen}) {
       <SocialLinks  
       isSmallScreen={isSmallScreen} 
       displayIcons={true}
-      style={{color: 'white', fill: 'white'}}/>
+      style={{color: '#6d6d6d', fill: '#6d6d6d',}}
+      footerIconContainer={{margin:'10px'}}/>
+
 
       <p id={`component-${theme}`}  className='footer__text'>© 2023. All rights reserved. This site is a work in progress :)</p>  
     </>

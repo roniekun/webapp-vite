@@ -71,7 +71,10 @@ const Navbar = ({ showNavbar, isSmallScreen, isMediumScreen, setShowNavbar, isDe
           
             <>
            {isDesktop && <SiteLogo showNavbar={showNavbar} 
-                                    navbarContainer={{ color : '#3D3D3d', width: '15vw'}} />}
+                                    navbarContainer={{ color : '#3D3D3d',
+                                     width: '15vw',
+                                     fontSize: '16px',
+                                     fontFamily: 'Rajdhani,sans serif'}} />}
             <div className="links_container">
               
 
@@ -101,7 +104,10 @@ const Navbar = ({ showNavbar, isSmallScreen, isMediumScreen, setShowNavbar, isDe
                                        color:'black',
                                        fill: 'black',
                                        boxShadow: 'none', 
-                                      width: '15vw'}}
+                                       width: '15vw',
+                                       fontSize: '16px',
+                                        color : '#3D3D3d',
+                                        fontFamily: 'Rajdhani,sans serif'}}
                         navbarSvg={{border: 'black solid 1px'}}/>
                                        }
             {isSmallScreen &&
@@ -118,7 +124,7 @@ const Navbar = ({ showNavbar, isSmallScreen, isMediumScreen, setShowNavbar, isDe
               fontSize: '12px',
               textTransform: 'capitalize',
               width: 'fit-content',
-              fontFamily: 'Clash Display, sans serif',
+              fontFamily: 'Rajdhani,sans serif',
               fontWeight: '500'
             
           }}

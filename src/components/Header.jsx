@@ -11,8 +11,10 @@ function Header({ showNavbar, isSmallScreen, isDesktop, setShowNavbar }) {
           <div id={`component-${theme}`}  className='header__container'>
           {isSmallScreen && <SiteLogo 
           isSmallScreen={isSmallScreen} 
-          headerContainer={{color: '#fafafa',
-          transform:'translateX(10%)'}}/> 
+          headerContainer={{color: '#f5f5f5',
+                            transform:'translateX(10%)',
+                            fontFamily: 'Rajdhani,sans serif',
+                            fontSize: '24px'}}/> 
           
           }
             </div>

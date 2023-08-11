@@ -9,7 +9,7 @@
     width: 100vw;
     top:0;
     position: fixed;
-    height: 100px;
+    height: 50px;
     z-index: 8888;
     transform: translateY(-100%);
   }
@@ -42,25 +42,6 @@
     z-index: -1;
 
   }
-
-
-  .link_wrapper {
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: auto;
-    margin: 5px;
-    text-align: center;
-    overflow: hidden;
-
-
-  }
-
-
-
   .links_container{
     display: flex;
     position: relative;
@@ -72,24 +53,35 @@
     margin-inline: 100px;
 
   }
+
+  .link_wrapper {
   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: auto;
+    text-align: center;
+    overflow: hidden;
+  }
+
   .navbar_link {
     position: relative;
     text-decoration: none;
-    font-family: 'Clash Display' sans-serif;
     letter-spacing: 1px;
     display: flex;
     color: var(--gray);
-    text-transform: capitalize;
+    text-transform: uppercase;
     line-height: 24px;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 600;
     width: auto;
     text-align: justify;
     overflow: hidden;
-  
+    font-family: 'Rajdhani', sans-serif;
+    
 
-  
   }
 
   .link_wrapper:hover .navbar_link{
@@ -216,17 +208,16 @@
       text-decoration: none;
       font-weight: 600;
       max-width: 100%;
-      font-family: 'Clash Display', sans-serif;
    
     }
     .link_wrapper:nth-child(1) .navbar_link {
 
-      font-size: 40px;
+      font-size: 47px;
       font-weight: 600;
     }
     .link_wrapper:nth-child(2) .navbar_link {
 
-      font-size: 35px;
+      font-size: 40px;
       font-weight: 500;
     }
     .link_wrapper:nth-child(3) .navbar_link {
@@ -237,7 +228,7 @@
     .link_wrapper:nth-child(4) .navbar_link {
 
       font-size: 40px;
-      font-weight: 200;
+      font-weight: 600;
      
     }
   
@@ -257,6 +248,7 @@
   padding: 5px;
   height: 20%;
   position: relative;
+  font-family: 'Rajdhani', sans-serif;
 }
 
   }

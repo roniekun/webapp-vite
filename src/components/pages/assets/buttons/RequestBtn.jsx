@@ -19,11 +19,11 @@ const RequestBtn = ({navbarButton, navbarSvg, isDesktop}) => {
             data-copy-text='roniebenitez01@gmail.com'
              onClick={handleClick}>
           Request Project 
-          {!isDesktop &&
+        
           <div className='svg_container'
           style={navbarSvg}> 
           <Mail className='mail_svg'/>
-          <TrendingFlat className='trendingflat_svg'/></div>}
+          <TrendingFlat className='trendingflat_svg'/></div>
         </b>
     </div>
   )
